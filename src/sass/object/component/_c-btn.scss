@@ -1,7 +1,22 @@
 @use "global" as *;
 
+
+
+// ボタン共通
 .c-btn {
-  padding: rem(10) rem(40);
-  background-color: black;
-  color: yellow;
+  padding-top: rem(10) ;
+  padding-bottom: rem(10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 背景が黒のボタン
+.c-btn--background-black{
+  @extend .c-btn;
+  max-width: rem(335);
+  width: 100%;
+  background-color: $black-sub;
+  border: solid 1px $white;
+  color: $white;
 }
