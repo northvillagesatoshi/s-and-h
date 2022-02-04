@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.c-new-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(60);
+    height: rem(60);
+    background-color: #FFBA6A;
+    border-radius: 50%;
+}
+
+.c-new-label span {
+    font-weight: $regular;
+    color: $black-sub;
+    text-transform: capitalize;
+    letter-spacing: rem(2);
+}
