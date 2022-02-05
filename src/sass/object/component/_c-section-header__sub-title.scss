@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.c-section-header__sub-title {
+    font-size: rem(50);
+    letter-spacing: rem(2);
+    color: $subTitle-yellow;
+    font-family: $second-font-family;
+    font-weight: $regular;
+    text-transform:capitalize;
+    opacity: .2;
+    @include mq(md) {
+        font-size: rem(110);
+        letter-spacing: rem(2);
+    }
+}
