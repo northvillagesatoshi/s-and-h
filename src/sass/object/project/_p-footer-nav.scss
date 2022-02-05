@@ -1,0 +1,24 @@
+@use "global"as *;
+
+.p-footer-nav__lists {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+.p-footer-nav__list:not(:last-child) {
+    @include mq(md) {
+        margin-right: rem(34.4);
+    }
+}
+
+.p-footer-nav__list a {
+    display: inline-block;
+    padding: rem(7.5) 0;
+    font-size: rem(16);
+    letter-spacing: rem(1.2);
+    color: $white;
+}
