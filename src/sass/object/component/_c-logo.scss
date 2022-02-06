@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.c-logo{
+    max-width: rem(70);
+    width: 100%;
+    display: block;
+
+    @include mq(md) {
+        max-width: rem(94);
+    }
+}
