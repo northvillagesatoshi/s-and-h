@@ -1,5 +1,12 @@
 @use "global"as *;
 
+.p-footer__inner {
+    @include mq(md) {
+        padding-right: rem(32);
+        padding-left: rem(32);
+    }
+}
+
 .p-footer__contents {
     text-align: center;
     @include mq(md) {
@@ -19,5 +26,22 @@
         display: flex;
         align-items: center;
         height: rem(39);
+    }
+}
+
+.p-footer__copyright-block {
+    text-align: center;
+    margin-top: rem(23);
+    @include mq(md) {
+        margin-top: rem(70);
+    }
+}
+
+.p-footer__copyright {
+    color: $white;
+    font-size: rem(11);
+    letter-spacing: rem(1.2);
+    @include mq(md) {
+        font-size: rem(15);
     }
 }

@@ -17,8 +17,20 @@
 
 .p-footer-nav__list a {
     display: inline-block;
-    padding: rem(7.5) 0;
+    padding: rem(3.4) 0;
     font-size: rem(16);
     letter-spacing: rem(1.2);
     color: $white;
+    @include mq(md) {
+        text-decoration: underline transparent;
+        text-underline-offset: rem(9);
+        transition: .5s all;
+    }
+}
+
+.p-footer-nav__list a:hover {
+    @include mq(md) {
+        text-decoration: underline #FFEA2E;
+        text-underline-offset: rem(9);
+    }
 }
