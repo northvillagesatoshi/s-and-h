@@ -3,16 +3,13 @@
     <div class="p-footer__contents">
       <div class="p-footer__logo">
         <a href="#">
-          <img src="./images/common/logo.svg" alt="codeups">
+          <%- include('../component/_c-logo') %>
         </a>
       </div>
-      <%- include('../project/_p-footer-nav') %>
-
-
-      <div class="p-footer__copyright-block">
-        <small class="p-footer__copyright">&copy; 2021 CodeUps Inc.</small>
-      </div>
-
+      <%- include('../project/_p-footer-nav') %>      
+    </div>
+    <div class="p-footer__copyright-block">
+      <small class="p-footer__copyright">&copy; 2021 CodeUps Inc.</small>
     </div>
   </div>
 </footer>
