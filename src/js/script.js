@@ -1,6 +1,18 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
+// ハンバーガー
+$('.js-hamburger').on('click', function () {
+  if ($('.js-hamburger').hasClass('is-open')) {
+    $('.js-drawer-menu').fadeOut();
+    $(this).removeClass('is-open');
+  } else {
+    $('.js-drawer-menu').fadeIn();
+    $(this).addClass('is-open');
+  }
+});
+
+
   var topBtn = $('.page-top');
   topBtn.hide();
 
@@ -48,6 +60,25 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+
+
+// スクロール後ヘッダースタイル変更
+var aboPos = $(".top-mv").offset().top;
+
+aboPos -= -130;
+
+$(window).scroll(function(){
+
+if($(window).scrollTop() > aboPos){
+  $(".js-to-top").addClass("to-top__scroll");
+} else {
+  $(".js-to-top").removeClass("to-top__scroll");
+
+}
+
+});
+
+
 
 
 
