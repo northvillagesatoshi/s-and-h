@@ -1,0 +1,33 @@
+@use "global"as *;
+
+  .p-header__inner {
+    background-color: rgba(17, 17, 17, 0.5);
+    width: 100%;
+    padding-right: rem(20);
+    padding-left: rem(20);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: rem(50);
+    position: relative;
+  
+    box-sizing: border-box;
+    @include mq(md) {
+      padding-left: rem(32);
+      padding-right: 0;
+    }
+  }
+  
+  .p-header__logo {
+    z-index: 9999;
+    position: relative;
+  }
+  
+  
+  .js-header.header__scroll {
+    background-color: $black;
+  }
+  
+  
