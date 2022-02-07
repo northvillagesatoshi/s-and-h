@@ -50,5 +50,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
+var aboPos = $(".top-mv").offset().top;
+
+aboPos -= -130;
+
+$(window).scroll(function(){
+
+if($(window).scrollTop() > aboPos){
+  $(".js-to-top").addClass("to-top__scroll");
+} else {
+  $(".js-to-top").removeClass("to-top__scroll");
+
+}
+
+});
+
 
 });
