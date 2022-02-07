@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.p-sp-nav {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2000;
+  background: $black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.p-sp-nav__items {
+  padding-top: rem(209);
+  padding-bottom: rem(208);
+  height: 100%;
+  overflow: scroll;
+  padding-left: rem(25);
+  padding-right: rem(25);
+  width: 100%;
+}
+.p-sp-nav__items a {
+  display: block;
+  width: 100%;
+  padding-top: rem(16);
+  align-items: center;
+  padding-bottom: rem(16);
+  color: $white;
+  text-align: center;
+}
+
+.p-sp-nav__items a :hover {
+  border-bottom: solid rem(1) $yellow2;
+}

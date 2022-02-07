@@ -1,1 +1,11 @@
 @use "global" as *;
+
+.l-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    width: 100%;
+  }
+  
