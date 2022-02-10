@@ -1,0 +1,113 @@
+@use "global" as *;
+
+.top-mv {
+  position: relative;
+  height: 100vh;
+}
+
+.top-mv__slide-img {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+
+  @include mq(md) {
+  }
+}
+
+/* imgのみ */
+.top-mv__img {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: anime 30s 0s infinite;
+
+  img{
+      height: 100%;
+  }
+}
+
+.top-mv__img:nth-of-type(2) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.top-mv__img:nth-of-type(3) {
+  -webkit-animation-delay: 20s;
+  animation-delay: 20s;
+}
+
+/* ふわっとアニメーション */
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    z-index: 9;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.top-mv__inner {
+  position: absolute;
+  color: $white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  font-weight: $bold;
+}
+
+.top-mv-title {
+  font-size: rem(28);
+
+  @include mq(md) {
+    font-size: rem(50);
+  }
+}
+
+.top-mv-sub-title {
+  font-size: rem(20);
+  margin-top: rem(11);
+  display: inline-block;
+
+  @include mq(md) {
+    font-size: rem(25);
+    margin-top: rem(2);
+  }
+}

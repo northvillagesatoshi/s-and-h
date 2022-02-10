@@ -63,7 +63,7 @@ $('.js-hamburger').on('click', function () {
 
 
 // スクロール後ヘッダースタイル変更
-var aboPos = $(".top-mv").offset().top;
+var aboPos = $(".js-mv").offset().top;
 
 aboPos -= -130;
 

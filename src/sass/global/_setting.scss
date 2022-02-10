@@ -12,13 +12,12 @@ $padding-pc: 25px;
 $padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
-
 ////////////////////
 // フォント設定
 ////////////////////
 
-$base-font-family: 'Noto Sans JP', sans-serif;
-$second-font-family: 'Noto Serif JP', serif;
+$base-font-family: "Noto Sans JP", sans-serif;
+$second-font-family: "Noto Serif JP", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -36,13 +35,11 @@ $bold: 700;
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
-$black-sub:#333;
+$black-sub: #333;
 $white: #fff;
-$subTitle-yellow: #F9F871;
-$yellow:#EFDB2A;
-$yellow2:#FFEA2E;
-
-
+$subTitle-yellow: #f9f871;
+$yellow: #efdb2a;
+$yellow2: #ffea2e;
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -55,7 +52,6 @@ $breakpoints: (
   lg: 1024,
   xl: 1440,
 );
-
 
 //メディアクエリー
 $mediaquerys: (
@@ -77,7 +73,6 @@ $mediaquerys: (
   @return math.div($pixels, 16) * 1rem;
 }
 
-
 ////////////////////
 // 非表示設定
 ////////////////////
@@ -95,4 +90,19 @@ $mediaquerys: (
   @include mq("md") {
     display: none;
   }
+}
+
+////////////////////////
+// フィルター設定
+////////////////////////
+.u-filter::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background-color: rgba(17, 17, 17, 0.2);
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
