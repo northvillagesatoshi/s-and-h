@@ -2,8 +2,6 @@
 
 // ボタン共通
 .c-btn {
-  padding-top: rem(10);
-  padding-bottom: rem(10);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,6 +39,8 @@
   background-color: $black-sub;
   border: solid 1px $white;
   color: $white;
+  padding-top: rem(10);
+  padding-bottom: rem(10);
 }
 
 // 背景が白のボタン
@@ -52,11 +52,12 @@
   color: $white;
 
   @include mq(md) {
-    max-width: rem(134);
-    width: 100%;
+    width: rem(134);
     color: $black;
     font-size: rem(16);
     background-color: $white;
+
+    // padding: rem(4) rem(21);
   }
 }
 
