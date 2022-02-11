@@ -8,8 +8,11 @@
     font-weight: $regular;
     text-transform:capitalize;
     opacity: .2;
+    display: block;
+    text-align: center;
     @include mq(md) {
         font-size: rem(110);
         letter-spacing: rem(2);
+        text-align: unset;
     }
 }

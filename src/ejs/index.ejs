@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
+  <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_p-header') %>
-      <%- include('./project/_p-top-mv') %>
-      <div class="l-top-news">
-      <%- include('./project/_p-top-news') %>
-      </div>
-      <%- include('./component/_c-section-header__title',{text:'事業内容'}) %>
-      <%- include('./component/_c-section-header__sub-title',{text:'content'}) %>
-      <%- include('./component/_c-to-top') %>
-    <%- include('./common/_p-footer') %>
-    
+    <%- include('./common/_p-header') %> <%- include('./project/_p-top-mv') %>
+    <div class="l-top-news"><%- include('./project/_p-top-news') %></div>
+    <section class="l-top-content">
+      <%- include('./project/_p-top-content') %>
+    </section>
 
-
-
+    <%-include('./component/_c-to-top') %> <%- include('./common/_p-footer') %>
   </body>
 </html>
