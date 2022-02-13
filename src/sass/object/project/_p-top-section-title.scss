@@ -14,3 +14,9 @@
         transform: unset;
     }
 }
+
+.p-top-section-title__block--contact {
+    @include mq(md) {
+        top: rem(-87);
+    }
+}
