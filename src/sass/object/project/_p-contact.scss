@@ -31,6 +31,8 @@
 .p-contact__btn {
     margin-top: rem(40);
     @include mq(md) {
+        display: flex;
+        justify-content: center;
         margin-top: rem(60);
     }
 }
