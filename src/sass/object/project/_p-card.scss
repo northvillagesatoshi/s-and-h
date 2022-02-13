@@ -1,0 +1,111 @@
+@use "global"as *;
+
+.p-card {
+    display: block;
+    background: $white;
+    cursor: pointer;
+    transition: .3s all;
+    color: $black-sub;
+}
+
+.p-card:hover {
+    @include mq(md) {
+        background-color: #333;
+        color: $white;
+        transition: .3s all;
+        opacity: 1;
+    }
+}
+
+.p-card__body {
+    padding: rem(4) rem(22) rem(17.07);
+
+    @include mq(md) {
+        padding: rem(4) rem(23) rem(16);
+    }
+}
+
+.p-card__title-block {
+    margin-bottom: rem(4);
+
+    @include mq(md) {
+        margin-bottom: rem(6);
+    }
+}
+
+.p-card__title {
+    font-size: rem(18);
+    font-weight: $normal;
+    letter-spacing: rem(1);
+    line-height: 1.9444;
+}
+
+.p-card__text-block {
+    margin-bottom: rem(6);
+
+    @include mq(md) {
+        margin-bottom: rem(9);
+    }
+}
+
+.p-card__text {
+    font-size: rem(14);
+    line-height: 1.8571;
+    letter-spacing: rem(1);
+}
+
+.p-card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-card__category {
+    display: inline-block;
+    padding: rem(1.5) rem(3.5);
+    font-size: rem(14);
+    letter-spacing: rem(1);
+    color: #000;
+    background: #FFEA2E;
+
+    @include mq(md) {
+        padding: rem(3) rem(5) rem(2);
+    }
+}
+
+.p-card__date {
+    font-size: rem(14);
+    font-weight: $regular;
+    letter-spacing: rem(1.4);
+}
+
+//　比率の違う画像を入れてもリサイズされる
+
+.p-card__img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @include mq(md) {
+        max-width: rem(557);
+        width: 100%;
+    }
+}
+
+.p-card__img::before {
+    content: "";
+    display: block;
+    padding-top: 66.57%;
+
+    @include mq(md) {
+        padding-top: 66.58%;
+    }
+}
+
+.p-card__img img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
