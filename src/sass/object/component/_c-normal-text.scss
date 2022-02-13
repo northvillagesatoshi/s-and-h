@@ -1,0 +1,12 @@
+@use "global" as *;
+.normal-text{
+    font-size: rem(16);
+    letter-spacing: rem(2);
+    color: $white;
+
+    @include mq(md) {
+        line-height: 2.18;
+        letter-spacing: rem(0.5); 
+    }
+}
+
