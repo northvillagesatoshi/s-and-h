@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: 0.3s;
+  z-index: 1;
 }
-
 .c-btn::before {
   content: "";
   width: 100%;
@@ -16,21 +17,21 @@
   top: 0;
   left: 0;
   z-index: -1;
-  background: $white;
   transform-origin: 0% 50%;
   transform: scaleX(0);
   transition: transform ease 0.3s;
 }
 
 .c-btn:hover {
-  color: $black-sub;
+  // color: $black-sub;
   opacity: unset;
 }
-
 .c-btn:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
 }
+
+
 
 // 背景が黒のボタン
 .c-btn--background-black {
@@ -41,6 +42,19 @@
   color: $white;
   padding-top: rem(10);
   padding-bottom: rem(10);
+  position: relative;
+}
+
+.c-btn--background-black::before {
+  background: $white;
+}
+
+.c-btn--background-black::before{
+  opacity: unset;
+}
+
+.c-btn--background-black:hover{
+  color: $black-sub;
 }
 
 // 背景が白のボタン
@@ -63,6 +77,10 @@
 
 .c-btn--background-white:hover {
   color: $white;
+}
+
+.c-btn--background-white::before {
+  background: $black-sub;
 }
 
 .c-btn--background-white:hover::before {
