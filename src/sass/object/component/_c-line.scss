@@ -1,7 +1,6 @@
 @use "global" as *;
 .c-line {
   position: relative;
-  width: 100vw;
   background: $yellow;
   z-index: -10;
   height: 1px;

@@ -1,0 +1,120 @@
+@use "global" as *;
+.p-top-overview {
+  position: relative;
+}
+
+.p-top-overview__block {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  @include mq(md) {
+    margin-top: rem(48);
+    margin-left: calc(50% - 50vw);
+    width: auto;
+    left: auto;
+    right: auto;
+    margin-right: 0;
+    padding-bottom: rem(90);
+    padding-top: rem(1);
+    background: linear-gradient(
+      270deg,
+      transparent 0%,
+      transparent 30%,
+      $black-sub 30%,
+      $black-sub 100%
+    );
+  }
+}
+
+.p-top-overview__wrapper {
+  background-color: $black-sub;
+  padding-bottom: rem(21);
+  position: relative;
+  @include mq(md) {
+    width: 100%;
+    max-width: 510px;
+    text-align: left;
+    background-color: transparent;
+    margin-right: rem(32);
+  }
+}
+
+.p-top-overview__img {
+  margin-top: rem(45);
+  position: relative;
+  z-index: 1;
+  @include mq(md) {
+    width: 100%;
+    max-width: 557px;
+    margin-top: rem(25);
+  }
+}
+
+.p-top-overview__text {
+  margin-top: rem(20);
+  text-align: left;
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.p-top-overview__btn {
+  margin-top: rem(21);
+
+  @include mq(md) {
+    margin-top: rem(49);
+  }
+}
+
+.p-top-overview__container {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin-top: rem(54);
+  }
+}
+
+.p-top-overview__title {
+  position: relative;
+}
+
+.p-top-overview__small-title {
+  padding-top: rem(24);
+  color: $white;
+  font-weight: normal;
+
+  @include mq(md) {
+    text-align: left;
+    letter-spacing: rem(0.5);
+    font-size: rem(25);
+  }
+}
+
+.p-top-overview__line {
+  position: absolute;
+  transform: rotate(105deg);
+  left: -102%;
+  top: 55%;
+  width: 267vw;
+  @include mq(md) {
+    transform: rotate(135deg);
+    left: -32.4%;
+    top: 75%;
+    width: 155vw;
+  }
+}
+
+.p-top-overview-bottom__inner {
+  padding-left: rem(20);
+  padding-right: rem(20);
+
+  @include mq(md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

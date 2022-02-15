@@ -1,38 +1,41 @@
 @use "global" as *;
 
 .p-contact {
-    background: $bg-gray;
-    padding-top: rem(68);
-    padding-bottom: rem(65);
-    @include mq(md) {
-        padding-top: rem(144);
-        padding-bottom: rem(144);
-    }
+  background: $bg-gray;
+  padding-top: rem(68);
+  padding-bottom: rem(65);
+  @include mq(md) {
+    padding-top: rem(144);
+    padding-bottom: rem(144);
+  }
 }
 
 .p-contact__title {
-    //l-blockにrelativeよりこっちの方がコンテンツの高さに依存しないので良いと思う
-    position: relative;
+  //l-blockにrelativeよりこっちの方がコンテンツの高さに依存しないので良いと思う
+  position: relative;
 }
 
 .p-contact__text-block {
-    margin-top: rem(20);
-    @include mq(md) {
-        text-align: center;  
-    }
+  margin-top: rem(20);
+  @include mq(md) {
+    text-align: center;
+  }
 }
 
 .p-contact__text {
-    font-size: rem(16);
-    letter-spacing: rem(2);
-    color: $white;
+  font-size: rem(16);
+  letter-spacing: rem(2);
+  color: $white;
 }
 
 .p-contact__btn {
-    margin-top: rem(40);
-    @include mq(md) {
-        display: flex;
-        justify-content: center;
-        margin-top: rem(60);
-    }
+  margin-top: rem(40);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(60);
+  }
 }

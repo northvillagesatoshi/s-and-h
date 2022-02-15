@@ -25,6 +25,13 @@
     top: rem(-33);
   }
 }
+.p-top-section-title__block--top-overview
+ {
+  @include mq(md) {
+    left: 0;
+    top: rem(-33);
+  }
+}
 .p-top-section-title__block--contact {
   @include mq(md) {
     left: 0;

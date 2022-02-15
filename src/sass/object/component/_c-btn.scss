@@ -2,9 +2,8 @@
 
 // ボタン共通
 .c-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
   position: relative;
   transition: 0.3s;
   z-index: 1;
@@ -31,8 +30,6 @@
   transform: scaleX(1);
 }
 
-
-
 // 背景が黒のボタン
 .c-btn--background-black {
   max-width: rem(335);
@@ -49,11 +46,11 @@
   background: $white;
 }
 
-.c-btn--background-black::before{
+.c-btn--background-black::before {
   opacity: unset;
 }
 
-.c-btn--background-black:hover{
+.c-btn--background-black:hover {
   color: $black-sub;
 }
 
