@@ -1,0 +1,152 @@
+@use "global" as *;
+
+.p-top-works__title {
+  position: relative;
+}
+
+// .p-top-works {
+//   padding-top: rem(71);
+//   text-align: center;
+//   position: relative;
+
+//   @include mq(md) {
+//     padding-top: rem(198);
+//   }
+// }
+
+.p-top-works__block {
+  @include mq(md) {
+    padding-bottom: rem(65);
+    padding-top: rem(1);
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 30%,
+      $black-sub 30%,
+      $black-sub 100%
+    );
+    margin-top: rem(48);
+    position: relative;
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+.p-top-works__swiper {
+  margin-top: rem(46);
+  overflow: hidden;
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-top-works__swiper-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  @include mq(md) {
+    width: auto;
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.p-top-works__text {
+  margin-top: rem(20);
+  @include mq(md) {
+    font-size: rem(16);
+    letter-spacing: rem(0.5);
+    line-height: 2.18;
+    margin-top: rem(40);
+  }
+}
+
+.p-top-works__btn {
+  margin-top: rem(21);
+  @include mq(md) {
+    margin-top: rem(49);
+  }
+}
+
+.p-top-works__wrapper {
+  background-color: $black-sub;
+  padding-bottom: rem(21);
+  position: relative;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  @include mq(md) {
+    width: auto;
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: transparent;
+    width: 70%;
+    text-align: left;
+  }
+}
+
+// .p-top-works__section-title {
+//   @include mq(md) {
+//     text-align: right;
+//   }
+// }
+
+.p-top-works__container {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+    margin-top: rem(75);
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+}
+
+.p-top-works__swiper-wrapper {
+  @include mq(md) {
+    width: 50.9%;
+  }
+}
+
+
+.p-top-works__small-title {
+  @include mq(md) {
+    text-align: left;
+    letter-spacing: rem(0.5);
+    font-size: rem(25);
+  }
+}
+
+.p-top-works__inner {
+  padding-left: $padding-sp;
+  padding-right: $padding-sp;
+
+  @include mq(md) {
+    
+  }
+}
+
+.p-top-works__small-title {
+  font-size: rem(20);
+  color: $white;
+  padding-top: rem(24);
+  text-align: center;
+  font-weight: normal;
+}
+
+.p-top-works__normal-text {
+  margin-top: rem(24);
+}
+
+.p-top-works__btn {
+  margin-top: rem(16);
+}
