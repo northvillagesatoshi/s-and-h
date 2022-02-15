@@ -1,7 +1,11 @@
 @use "global" as *;
+.p-top-content__title{
+  position: relative;
+}
+
+
 .p-top-content__line {
-  // left: rem(175);
-  // top: rem(49);
+  position: absolute;
   transform: rotate(241.09deg);
   top: 75%;
   left: -55%;

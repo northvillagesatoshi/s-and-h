@@ -1,9 +1,8 @@
 @use "global" as *;
 .c-line {
-    position: absolute;
-    width: 100vw;
-    background: $yellow;
-    z-index: -10;
-    height: 1px;
-  }
-  
+  position: relative;
+  width: 100vw;
+  background: $yellow;
+  z-index: -10;
+  height: 1px;
+}

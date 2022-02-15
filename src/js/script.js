@@ -79,7 +79,30 @@ if($(window).scrollTop() > aboPos){
 });
 
 
-
-
+var mySwiper = new Swiper ('.swiper-container', {
+  slidesPerView:1.48,//画像を何枚表示するか
+  spaceBetween: 20,
+  centeredSlides : true,//見切らせたい場合メイン画像をセンターにもってくるか
+  //自動再生する場合
+  autoplay: {
+  delay: 3000, //3秒後に次の画像に代わる
+  },
+  loop: true,//最後の画像までいったらループする
+  //ページネーションをつける場合
+  pagination: {
+   el: '.swiper-pagination',
+   type: 'bullets',
+   clickable: true,
+  },
 
 });
+
+});
+
+
+
+
+
+
+
+
