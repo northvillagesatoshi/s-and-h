@@ -1,8 +1,13 @@
-<div class="c-line p-top-content__line"></div>
+<div class="p-top-content__line">
+  <%- include('../component/_c-line') %>
+</div>
 <div class="p-top-content__inner l-inner">
   <div class="p-top-content__title">
-      <%- include('../project/_p-top-section-title') %>
+    <%- include('../component/_c-section-header__title',{text:'事業概要'}) %>
+    <div class="p-top-section-title__block p-top-section-title__block--top-content">
+        <%- include('../component/_c-section-header__sub-title',{text:'content'}) %>
     </div>
+</div>
   <div class="p-top-content__items">
     <a class="p-top-content__item"
       ><img src="images/content/content1.jpg" alt="" />
