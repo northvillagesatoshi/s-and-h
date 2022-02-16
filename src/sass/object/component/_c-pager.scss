@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.wp-pagenavi {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: rem(104);
+  transition: 0.3s;
+  max-width: 335px;
+  margin: 0 auto;
+
+  @include mq(md) {
+    max-width: unset;
+  }
+
+  .page {
+    height: rem(24);
+    width: rem(24);
+  }
+
+  .extend {
+    height: rem(24);
+    width: rem(24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page,
+  .extend,
+  .nextpostslink,
+  .previouspostslink {
+    border: solid 1px $white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: rem(16);
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+    color: $white;
+  }
+
+  .previouspostslink,
+  .nextpostslink {
+    width: rem(71);
+    height: rem(24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .current {
+    color: $black;
+    background-color: $white;
+    height: rem(24);
+    width: rem(24);
+    text-align: center;
+    padding: 0;
+  }
+
+  .page,
+  .current,
+  .extend,
+  .nextpostslink {
+    margin-left: rem(24);
+  }
+}
+
+.wp-pagenavi a {
+  transition: 0.3s;
+}
+.wp-pagenavi a:hover {
+  color: $black;
+  background-color: $white;
+  opacity: unset;
+  border: $white 1px solid;
+}
