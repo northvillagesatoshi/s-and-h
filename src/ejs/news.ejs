@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_p-header') %> <%- include('./project/_p-top-mv') %>
+    <main class="news-content">
+      <div class="news-content__inner">
+        <div class="news-content__news">
+          <% for (var i=1; i < 11; i++) { %> <%- include('./project/_p-news') %>
+        </div>
+        <% } %> <%- include('./component/_c-pager') %>
+        <%-include('./component/_c-to-top') %>
+      </div>
+    </main>
+    <%- include('./common/_p-footer') %>
+  </body>
+</html>
