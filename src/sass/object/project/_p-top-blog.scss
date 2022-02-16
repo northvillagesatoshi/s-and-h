@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.p-top-blog__inner {
+    max-width: rem(600);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    @include mq(md) {
+        max-width: rem(1140);
+    }
+}
+
+.p-top-blog__header {
+    position: relative;
+}
+
+.p-top-blog__sub-title {
+    position: absolute;
+    top: -50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    @include mq(md) {
+        top: rem(-61);
+        right: 0;
+        transform: initial;
+    }
+}
+
+.p-top-blog__cards {
+    margin-top: rem(63);
+    @include mq(md) {
+        margin-top: rem(35);
+    }
+}
+
+.p-top-blog__button {
+    margin-top: rem(24);
+    @include mq(md) {
+        display: flex;
+        justify-content: center;
+        margin-top: rem(48);
+    }
+}
