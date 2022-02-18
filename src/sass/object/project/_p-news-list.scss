@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.p-news-list__item + .p-news-list__item{
+    margin-top: rem(32);
+
+    @include mq(md) {
+        margin-top: rem(42);
+    }
+}
+

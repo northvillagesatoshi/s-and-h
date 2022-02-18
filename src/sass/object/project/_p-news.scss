@@ -5,6 +5,7 @@
   @include mq(md) {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }
 
@@ -16,8 +17,7 @@
     font-size: rem(16);
     margin-right: rem(30);
     letter-spacing: rem(-1);
-    @include mq(md) {
-    }
+ 
   }
 }
 
@@ -31,12 +31,10 @@
   }
 }
 
-.p-news__text :hover {
-  text-decoration: underline;
-}
 
 .p-news__text {
-  margin: rem(17);
+  margin-top: rem(17);
+  transition: .3s;
 
   @include mq(md) {
     margin: 0;
@@ -46,6 +44,11 @@
     width: 100%;
   }
 }
+
+.p-news__text :hover {
+  color: $yellow;
+}
+
 
 .p-news__btn {
   margin: rem(24);

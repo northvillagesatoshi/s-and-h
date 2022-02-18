@@ -7,15 +7,22 @@
       <%- include('./project/_p-lower-mv',{text:'お知らせ'}) %>
     </section>
 
+    <div class="l-breadcrumb">
+      <%- include('./component/_c-breadcrumb',{page_title:'お知らせ'}) %>
+    </div>
+
     <main class="news-content">
-      <div class="news-content__inner">
-        <div class="news-content__news">
-          <% for (var i=1; i < 11; i++) { %> <%- include('./project/_p-news') %>
+      <div class="l-inner">
+        <div class="news-content__list l-news-list">
+          <%- include('./project/_p-news-list')%>
+          <div class="l-pager"><%- include('./component/_c-pager') %></div>
         </div>
-        <% } %> <%- include('./component/_c-pager') %>
-        <%-include('./component/_c-to-top') %>
       </div>
+      <%-include('./component/_c-to-top') %>
     </main>
+    <!-- <section class="l-contact">
+      <%- include('./project/_p-contact') %>
+    </section> -->
     <%- include('./common/_p-footer') %>
   </body>
 </html>

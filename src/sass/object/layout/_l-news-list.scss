@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.l-news-list{
+    max-width: rem(860);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: rem(86);
+    margin-bottom: rem(120);
+    @include mq(md) {
+        margin-top: rem(65);
+        margin-bottom: rem(150);
+    }
+
+
+}
+
