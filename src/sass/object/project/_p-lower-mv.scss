@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-lower-mv {
+  position: relative;
+  height: 100%;
+  width: 100%C;
+}
+
+.p-lower-mv__title {
+  font-size: rem(30);
+  color: $white;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  @include mq(md) {
+    font-size: rem(35);
+  }
+}
+
+.p-lower-mv--news {
+  background: center / cover no-repeat url("../../../images/news/news-mv.jpg");
+  height: 100vh;
+  width: 100%;
+}

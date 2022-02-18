@@ -2,7 +2,11 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_p-header') %> <%- include('./project/_p-top-mv') %>
+    <%- include('./common/_p-header') %>
+    <section class="p-lower-mv--news">
+      <%- include('./project/_p-lower-mv',{text:'お知らせ'}) %>
+    </section>
+
     <main class="news-content">
       <div class="news-content__inner">
         <div class="news-content__news">
