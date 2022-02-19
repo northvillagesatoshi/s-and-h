@@ -1,50 +1,31 @@
 <div class="p-top-works">
-  <div class="p-top-works__inner l-inner">
-    <div class="p-top-works__title">
+  <div class="p-top-works__inner">
+    <div class="p-top-works__title l-inner">
       <%- include('../component/_c-section-header__title',{text:'制作実績'}) %>
-      <div
-        class="p-top-section-title__block p-top-section-title__block--top-works"
-      >
-        <%- include('../component/_c-section-header__sub-title',{text:'works'})
-        %>
+      <div class="p-top-section-title__block p-top-section-title__block--top-works">
+        <%- include('../component/_c-section-header__sub-title',{text:'works'}) %>
       </div>
     </div>
-    <div class="p-top-works__block">
-      <div class="p-top-works__container">
-        <div class="p-top-works__swiper-wrapper">
-          <div id="slide">
-            <div class="swiper-container">
-              <div class="swiper p-top-works__swiper">
-                <ul class="swiper-wrapper">
-                  <!-- スライドする画像 -->
-                  <% for (var i=1; i < 4; i++) { %>
-                  <li class="swiper-slide u-filter">
-                    <img
-                      src="../../images/works/works<%= i %>.jpg"
-                      alt="制作実績<%= i %>"
-                    />
-                  </li>
-                  <% } %>
-                </ul>
-                <div class="swiper-pagination"></div>
+    <div class="p-top-works__content">
+      <div class="p-top-works__swiper">
+          <div class="swiper works-swiper">
+            <div class="swiper-wrapper">
+              <% for (var i=1; i < 4; i++) { %>
+              <div class="swiper-slide p-top-works__slide-img">
+                <img src="./images/works/works<%= i %>.jpg" alt="#">
               </div>
+              <% } %>
             </div>
           </div>
-        </div>
-
-        <div class="p-top-works__wrapper">
-          <div class="p-top-works__inner">
-            <h3 class="p-top-works__small-title">メインタイトルが入ります。</h3>
-            <div class="p-top-works__normal-text">
-              <%-
-              include('../component/_c-normal-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
-              %>
-            </div>
-            <div class="p-top-works__btn">
-              <%- include('../component/_c-btn',{text:'詳しく見る', link:'#',
-              backcolor:'black'}) %>
-            </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      <div class="p-top-works__body">
+        <h3 class="p-top-works__small-title">メインタイトルが入ります</h3>
+          <div class="p-top-works__normal-text">
+            <%- include('../component/_c-normal-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
           </div>
+        <div class="p-top-works__btn">
+          <%- include('../component/_c-btn',{text:'詳しく見る', link:'#', backcolor:'black'}) %>
         </div>
       </div>
     </div>

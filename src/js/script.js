@@ -1,16 +1,15 @@
-
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-// ハンバーガー
-$('.js-hamburger').on('click', function () {
-  if ($('.js-hamburger').hasClass('is-open')) {
-    $('.js-drawer-menu').fadeOut();
-    $(this).removeClass('is-open');
-  } else {
-    $('.js-drawer-menu').fadeIn();
-    $(this).addClass('is-open');
-  }
-});
+  // ハンバーガー
+  $('.js-hamburger').on('click', function () {
+    if ($('.js-hamburger').hasClass('is-open')) {
+      $('.js-drawer-menu').fadeOut();
+      $(this).removeClass('is-open');
+    } else {
+      $('.js-drawer-menu').fadeIn();
+      $(this).addClass('is-open');
+    }
+  });
 
 
   var topBtn = $('.page-top');
@@ -57,52 +56,67 @@ $('.js-hamburger').on('click', function () {
     let target = $(this.hash);
     if (!target.length) return;
     let targetY = target.offset().top - header;
-    $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+    $('html,body').animate({
+      scrollTop: targetY
+    }, time, 'swing');
     return false;
   });
 
 
-// スクロール後ヘッダースタイル変更
-var aboPos = $(".js-mv").offset().top;
+  // スクロール後ヘッダースタイル変更
+  // var aboPos = $(".js-mv").offset().top;
 
-aboPos -= -130;
+  // aboPos -= -130;
 
-$(window).scroll(function(){
+  // $(window).scroll(function () {
 
-if($(window).scrollTop() > aboPos){
-  $(".js-to-top").addClass("to-top__scroll");
-} else {
-  $(".js-to-top").removeClass("to-top__scroll");
+  //   if ($(window).scrollTop() > aboPos) {
+  //     $(".js-to-top").addClass("to-top__scroll");
+  //   } else {
+  //     $(".js-to-top").removeClass("to-top__scroll");
 
-}
+  //   }
 
+  // });
+
+
+  var mySwiper = new Swiper('.swiper-container', {
+    slidesPerView: 1.48, //画像を何枚表示するか
+    spaceBetween: 20,
+    centeredSlides: true, //見切らせたい場合メイン画像をセンターにもってくるか
+    //自動再生する場合
+    autoplay: {
+      delay: 3000, //3秒後に次の画像に代わる
+    },
+    loop: true, //最後の画像までいったらループする
+    //ページネーションをつける場合
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+
+  });
+
+  let swiper = new Swiper('.works-swiper', {
+    loop: true,
+    effect: 'fade',
+    //　自動で画像が切り替わっていく
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    //画像が切り替わるスピード
+    speed: 2000,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets', //ページネーションの種類
+      clickable: true, //クリックに反応させる
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 });
-
-
-var mySwiper = new Swiper ('.swiper-container', {
-  slidesPerView:1.48,//画像を何枚表示するか
-  spaceBetween: 20,
-  centeredSlides : true,//見切らせたい場合メイン画像をセンターにもってくるか
-  //自動再生する場合
-  autoplay: {
-  delay: 3000, //3秒後に次の画像に代わる
-  },
-  loop: true,//最後の画像までいったらループする
-  //ページネーションをつける場合
-  pagination: {
-   el: '.swiper-pagination',
-   type: 'bullets',
-   clickable: true,
-  },
-
-});
-
-});
-
-
-
-
-
-
-
-
