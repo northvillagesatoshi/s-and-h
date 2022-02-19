@@ -98,7 +98,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   });
 
-  let swiper = new Swiper('.swiper', {
+  let swiper = new Swiper('.works-swiper', {
     loop: true,
     effect: 'fade',
     //　自動で画像が切り替わっていく

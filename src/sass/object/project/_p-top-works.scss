@@ -1,74 +1,21 @@
-@use "global" as *;
+@use "global"as *;
 
-//英語のテキストのposition
-// .p-top-works__title {
-//   position: relative;
-// }
-
-// .p-top-works {
-//   padding-top: rem(71);
-//   text-align: center;
-//   position: relative;
-
-//   @include mq(md) {
-//     padding-top: rem(198);
-//   }
-// }
-
-.p-top-works__block {
-  width: 100vw;
+.p-top-works__title {
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-
-  @include mq(md) {
-    width: auto;
-    left: auto;
-    right: auto;
-    margin-left: 0;
-    padding-bottom: rem(65);
-    padding-top: rem(1);
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      transparent 30%,
-      $black-sub 30%,
-      $black-sub 100%
-    );
-    margin-top: rem(48);
-    position: relative;
-    margin-right: calc(50% - 50vw);
-  }
 }
+
 
 .p-top-works__swiper {
-  margin-top: rem(46);
-  overflow: hidden;
   @include mq(md) {
-    margin-top: 0;
+    max-width: rem(557);
+    width: 100%;
+    margin-right: rem(32);
   }
 }
-
-// .p-top-works__swiper-wrapper {
-//   width: 100vw;
-//   position: relative;
-//   left: 50%;
-//   right: 50%;
-//   margin-left: -50vw;
-//   margin-right: -50vw;
-//   @include mq(md) {
-//     width: auto;
-//     left: auto;
-//     right: auto;
-//     margin-left: 0;
-//     margin-right: 0;
-//   }
-// }
 
 .p-top-works__text {
   margin-top: rem(20);
+
   @include mq(md) {
     font-size: rem(16);
     letter-spacing: rem(0.5);
@@ -80,41 +27,10 @@
 .p-top-works__btn {
   margin-top: rem(21);
   text-align: center;
+
   @include mq(md) {
     margin-top: rem(49);
     text-align: left;
-  }
-}
-
-.p-top-works__wrapper {
-  background-color: $black-sub;
-  padding-bottom: rem(21);
-  position: relative;
-
-  z-index: 1;
-  @include mq(md) {
-    background-color: transparent;
-    max-width: 510px;
-    width: 100%;
-    text-align: left;
-    margin-left: rem(32);
-  }
-}
-
-.p-top-works__container {
-  @include mq(md) {
-    display: flex;
-    align-items: flex-start;
-    margin-top: rem(75);
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.p-top-works__swiper-wrapper {
-  @include mq(md) {
-    max-width: 557px;
-    width: 100%;
   }
 }
 
@@ -141,7 +57,7 @@
 
 
 // =============================
-// == テスト
+// == ハルキ追加
 .p-top-works__inner {
   width: 100%;
   margin: 0 auto;
@@ -152,21 +68,22 @@
   text-align: center;
 
   @include mq(md) {
-      max-width: rem(1100);
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: rem(32);
+    max-width: rem(1100);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: rem(32);
   }
 }
 
 .p-top-works__content {
   background: #333;
+
   @include mq(md) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: rem(82) 0 rem(58) rem(20);
-      background: linear-gradient(90deg, transparent 0%, transparent 30%, #333 30%, #333 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(82) 0 rem(58) rem(25);
+    background: linear-gradient(90deg, transparent 0%, transparent 30%, #333 30%, #333 100%);
   }
 }
 
@@ -179,11 +96,11 @@
   padding: 0 rem(20) rem(21);
 
   @include mq(md) {
-      max-width: rem(530);
-      width: 100%;
-      margin: 0;
-      padding: 0 rem(20) rem(27) 0;
-      text-align: left;
+    max-width: rem(530);
+    width: 100%;
+    margin: 0;
+    padding: 0 rem(20) rem(27) 0;
+    text-align: left;
   }
 }
 
@@ -196,27 +113,11 @@
   margin-bottom: rem(24);
 
   @include mq(md) {
-      margin-bottom: rem(35);
-      padding-left: 0;
-      font-size: rem(25);
-      letter-spacing: rem(0.5);
-      text-align: left;
-  }
-}
-
-.p-top-works__title::after {
-  content: '｡';
-
-  @include mq(md) {
-      display: none;
-  }
-}
-
-.p-top-works__text-block {
-  margin-bottom: rem(26);
-
-  @include mq(md) {
-      margin-bottom: rem(48);
+    margin-bottom: rem(35);
+    padding-left: 0;
+    font-size: rem(25);
+    letter-spacing: rem(0.5);
+    text-align: left;
   }
 }
 
@@ -226,30 +127,31 @@
   line-height: 1.44;
 
   @include mq(md) {
-      letter-spacing: rem(0.5);
-      line-height: 2.1875;
+    letter-spacing: rem(0.5);
+    line-height: 2.1875;
   }
 }
+
 .p-top-works__slide-img {
   position: relative;
   overflow: hidden;
-  padding-top: 69.6%;
+  padding-top: 69.9%;
 }
 
 .p-top-works__slide-img img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
 }
 
 .p-top-works__swiper {
   @include mq(md) {
-      max-width: rem(557);
-      width: 100%;
-      margin-right: rem(32);
+    max-width: rem(557);
+    width: 100%;
+    margin-right: rem(32);
   }
 }
 
@@ -261,9 +163,10 @@
   position: relative;
   top: rem(-3);
   background-color: #C4C4C4;
+
   @include mq(md) {
-      top: rem(6);
-      left: rem(-20);
+    top: rem(6);
+    left: rem(-20);
   }
 }
 
@@ -274,5 +177,5 @@
 
 // スライドのページネーション用マージン　既存のスタイルの優先度が高いためimportantを使用
 .p-top-works .swiper-pagination-bullet {
-  margin: 0 rem(5.5)!important;
+  margin: 0 rem(5.5) !important;
 }
