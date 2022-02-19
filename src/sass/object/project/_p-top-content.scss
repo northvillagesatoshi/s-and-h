@@ -10,6 +10,7 @@
   top: 75%;
   left: -55%;
   width: 200vw;
+  z-index: -1;
 
   @include mq(md) {
     // left:36%;
