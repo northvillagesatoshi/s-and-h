@@ -35,13 +35,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // ヘッダー
-  $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
-    } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
-    }
-  });
+  // $(window).on('scroll', function () {
+  //   if ($('.slider1').height() < $(this).scrollTop()) {
+  //     $('.header').css('background', 'rgba(17,17,17,1)');
+  //   } else {
+  //     $('.header').css('background', 'rgba(17,17,17,0.5)');
+  //   }
+  // });
 
   //ドロワーメニュー
   $('.navbar_toggle').on('click', function () {
