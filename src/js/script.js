@@ -75,20 +75,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  // var aboPos = $(".js-mv").offset().top;
+  var aboPos = $(".js-mv").offset().top;
 
-  // aboPos -= -130;
+  aboPos -= -130;
+  
+  $(window).scroll(function () {
+    
+    if ($(window).scrollTop() > aboPos) {
+      $(".js-to-top").addClass("to-top__scroll");
+    } else {
+      $(".js-to-top").removeClass("to-top__scroll");
 
-  // $(window).scroll(function () {
+    }
 
-  //   if ($(window).scrollTop() > aboPos) {
-  //     $(".js-to-top").addClass("to-top__scroll");
-  //   } else {
-  //     $(".js-to-top").removeClass("to-top__scroll");
-
-  //   }
-
-  // });
+  });
 
 
   var mySwiper = new Swiper('.swiper-container', {

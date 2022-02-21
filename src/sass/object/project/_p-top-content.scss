@@ -84,16 +84,7 @@
 }
 
 .p-top-content__item img {
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
-// .p-top-content__section-sub-title {
-//   @include mq(md) {
-//     top: rem(11);
-//   }
-// }
 
-// .p-top-content__section-title {
-//   @include mq(md) {
-//     text-align: left;
-//   }
-// }
