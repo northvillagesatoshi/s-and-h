@@ -5,10 +5,10 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: rem(86);
-    margin-bottom: rem(120);
+    // margin-bottom: rem(120);
     @include mq(md) {
         margin-top: rem(65);
-        margin-bottom: rem(150);
+        // margin-bottom: rem(150);
     }
 
 
