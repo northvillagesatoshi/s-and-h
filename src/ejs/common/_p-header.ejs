@@ -1,8 +1,10 @@
 <header class="p-header l-header">
   <div class="p-header__inner js-header">
-    <h1 class="p-header__logo">
-      <%- include('../component/_c-logo',{ link:'index.html'}) %>
-    </h1>
+    <div class="p-header__logo">
+      <a href="index.html">
+        <%- include('../component/_c-logo') %>
+      </a>
+    </div>
     <%- include('..//component/_c-hamburger') %>
     <%- include('../project/_p-header-pc-nav') %>  
     <%- include('../project/_p-header-sp-nav') %>  

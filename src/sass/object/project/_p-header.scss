@@ -23,6 +23,13 @@
   .p-header__logo {
     z-index: 9999;
     position: relative;
+    height: inherit;
+  }
+
+  .p-header__logo a {
+    display: flex;
+    align-items: center;
+    height: inherit;
   }
   
   
