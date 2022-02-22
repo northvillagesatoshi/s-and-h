@@ -77,6 +77,8 @@
 
 .p-top-works__content {
   background: #333;
+  position: relative;
+  z-index: 1;
 
   @include mq(md) {
     display: flex;
