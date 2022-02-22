@@ -1,110 +1,39 @@
+<% 
+var worksitems = [
+{ src:"images/works/works1.jpg" , alt:"制作実績",
+title:"CodeUps株式会社", link:"works-detail.html" , cate:"カテゴリー"}, 
+{ src:"images/works/works2.jpg" , alt:"制作実績",
+title:"CodeUps株式会社", link:"works-detail.html" , cate:"カテゴリー"}, 
+{ src:"images/works/works3.jpg" , alt:"制作実績", title:"CodeUps株式会社",
+link:"works-detail.html", cate:"カテゴリー"}, 
+{ src:"images/works/works4.jpg" ,
+alt:"制作実績", title:"CodeUps株式会社", link:"works-detail.html", cate:"カテゴリー"}, 
+{ src:"images/works/works5.jpg" , alt:"制作実績", title:"CodeUps株式会社",
+link:"works-detail.html", cate:"カテゴリー"}, 
+{ src:"images/works/works6.jpg" ,
+alt:"制作実績", title:"CodeUps株式会社", link:"works-detail.html",cate:"カテゴリー" }, 
+] %>
+
 <main class="p-works">
   <div class="l-inner">
+    <div class="p-works__tab"><%- include('../component/_c-tab') %></div>
 
-    <div class="p-works__tab">
-        <%- include('../component/_c-tab') %>
-    </div>
+    <ul class="p-works__items">
+      <% for (var worksitem of worksitems) { %>
 
-    <div class="tab__contents medias production-content__medias">
-      <!-- tab-content__media1  -->
-      <div
-        class="media media--column tab-content__media tab__content production-content__media js-tab1"
-      >
-        <div class="media__img">
-          <div class="media__label label label--media-style">
-            <a>カテゴリ1</a>
-          </div>
-          <img src="./assets/images/pc/production1.jpg" alt="制作実績1" />
+      <li class="p-works__item">
+        <div class="p-works__category">
+          <a><%= worksitem.cate %></a>
         </div>
-        <div class="media__body media__body--margin-small">
-          <h3 class="media__title">CodeUps株式会社</h3>
+        <div class="p-works__img">
+          <img src="<%= worksitem.src %>" alt="<%= worksitem.alt %>" />
         </div>
-      </div>
-      <!-- tab-content__media2  -->
-      <div
-        class="media media--column tab-content__media tab__content production-content__media js-tab1"
-      >
-        <div class="media__img">
-          <div class="media__label label label--media-style">
-            <a>カテゴリ1</a>
-          </div>
-          <img src="./assets/images/pc/production2.jpg" alt="制作実績2" />
+        <div class="p-works__body">
+          <h3 class="p-works__title"><%= worksitem.title %></h3>
         </div>
-        <div class="media__body media__body--margin-small">
-          <h3 class="media__title">CodeUps株式会社</h3>
-        </div>
-      </div>
-      <!-- tab-content__media3  -->
-      <div
-        class="media media--column tab-content__media tab__content production-content__media js-tab1"
-      >
-        <div class="media__img">
-          <div class="media__label label label--media-style">
-            <a>カテゴリ1</a>
-          </div>
-          <img src="./assets/images/pc/production3.jpg" alt="制作実績3" />
-        </div>
-        <div class="media__body media__body--margin-small">
-          <h3 class="media__title">CodeUps株式会社</h3>
-        </div>
-      </div>
-      <!-- tab-content__media4  -->
-      <div
-        class="media media--column tab-content__media tab__content production-content__media js-tab1"
-      >
-        <div class="media__img">
-          <div class="media__label label label--media-style">
-            <a>カテゴリ1</a>
-          </div>
-          <img src="./assets/images/pc/production4.png" alt="制作実績4" />
-        </div>
-        <div class="media__body media__body--margin-small">
-          <h3 class="media__title">CodeUps株式会社</h3>
-        </div>
-      </div>
-      <!-- tab-content__media5  -->
-      <div
-        class="media media--column tab-content__media tab__content production-content__media js-tab1"
-      >
-        <div class="media__img">
-          <div class="media__label label label--media-style">
-            <a>カテゴリ1</a>
-          </div>
-          <img src="./assets/images/pc/production5.jpg" alt="制作実績5" />
-        </div>
-        <div class="media__body media__body--margin-small">
-          <h3 class="media__title">CodeUps株式会社</h3>
-        </div>
-      </div>
-      <!-- tab-content__media6  -->
-      <div
-        class="media media--column tab-content__media tab__content production-content__media js-tab1"
-      >
-        <div class="media__img">
-          <div class="media__label label label--media-style">
-            <a>カテゴリ1</a>
-          </div>
-          <img src="./assets/images/pc/production6.jpg" alt="制作実績6" />
-        </div>
-        <div class="media__body media__body--margin-small">
-          <h3 class="media__title">CodeUps株式会社</h3>
-        </div>
-      </div>
-      <!-- tab-content__media7  -->
-      <div
-        class="media media--column tab-content__media tab__content production-content__media js-tab2"
-      >
-        <div class="media__img">
-          <div class="media__label label label--media-style">
-            <a>カテゴリ1</a>
-          </div>
-          <img src="./assets/images/pc/production1.jpg" alt="制作実績1" />
-        </div>
-        <div class="media__body media__body--margin-small">
-          <h3 class="media__title">CodeUps株式会社</h3>
-        </div>
-      </div>
-    </div>
+      </li>
+      <% } %>
+    </ul>
 
     <div class="l-pager"><%- include('../component/_c-pager') %></div>
   </div>
