@@ -20,9 +20,7 @@ $base-font-family: "Noto Sans JP", sans-serif;
 $second-font-family: "Noto Serif JP", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
-body {
-  font-family: $base-font-family;
-}
+
 
 // フォントウェイト
 $regular: 400;
@@ -106,4 +104,11 @@ $mediaquerys: (
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+
+// body///////
+body {
+  font-family: $base-font-family;
+  color: $white;
 }
