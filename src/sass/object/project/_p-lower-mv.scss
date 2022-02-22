@@ -2,8 +2,9 @@
 
 .p-lower-mv {
   position: relative;
-  height: 100%;
+  height: 28.9vh;
   width: 100%;
+  max-height: rem(370);
 }
 
 .p-lower-mv__title {
@@ -22,8 +23,6 @@
 
 .p-lower-mv--news {
   background: center / cover no-repeat url("../../../images/news/news-mv.jpg");
-  height: 100vh;
-  width: 100%;
 }
 .p-lower-mv--content {
   // background: center / cover no-repeat url("../../../images/content/content-mv.jpg");
@@ -31,6 +30,4 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
 }
