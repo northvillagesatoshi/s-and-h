@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_p-header') %>
+    <section class="p-lower-mv--news">
+      <%- include('./project/_p-lower-mv',{text:'制作実績'}) %>
+    </section>
+
+    <div class="l-breadcrumb">
+      <%- include('./component/_c-breadcrumb',{page_title:'制作実績'}) %>
+    </div>
+
+    <div class="l-works">
+        <%- include('./project/_p-works') %>
+    </div>
+    <section class="l-contact p-contact">
+      <%- include('./project/_p-contact') %>
+    </section>
+    <%- include('./common/_p-footer') %>
+  </body>
+</html>
