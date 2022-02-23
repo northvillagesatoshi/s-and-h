@@ -101,6 +101,7 @@
   left: -102%;
   top: 55%;
   width: 267vw;
+  z-index: -1;
   @include mq(md) {
     transform: rotate(135deg);
     left: -32.4%;
