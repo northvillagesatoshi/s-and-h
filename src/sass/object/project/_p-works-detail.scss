@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.p-works-detail__title {
+    font-size: rem(20);
+    letter-spacing: rem(.4);
+    line-height: 1.75;
+    font-weight: $regular;
+
+}
+
+.p-works-detail__category {
+    max-width: rem(130);
+    width: 100%;
+    height: rem(40);
+    border: 1px solid $white;
+}
+
+.p-works-detail-category {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    letter-spacing: rem(2);
+}
+
+.p-works-detail__sub-title {
+    font-size: rem(20);
+    font-weight: $regular;
+    letter-spacing: rem(.4);
+}
+
+.p-works-detail__text {
+    line-height: 1.75;
+    letter-spacing: rem(.4);
+}
