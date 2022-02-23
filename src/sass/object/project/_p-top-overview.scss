@@ -114,7 +114,7 @@
   padding-right: rem(20);
 
   @include mq(md) {
-    padding-left: 0;
+    // padding-left: 0;
     padding-right: 0;
   }
 }
