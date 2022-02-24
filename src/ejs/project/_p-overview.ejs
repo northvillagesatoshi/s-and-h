@@ -1,0 +1,38 @@
+<% 
+let overview_infos = [
+{ 
+title:"会社名", text:"テキストが入ります。" }, 
+{ 
+title:"設立", text:"テキストが入ります。" }, 
+{ 
+title:"資本金", text:"テキストが入ります。" }, 
+{ 
+title:"売上高", text:"テキストが入ります。" }, 
+{ 
+title:"代表者", text:"テキストが入ります。" }, 
+{ 
+title:"従業員数", text:"テキストが入ります。" }, 
+{ 
+title:"事業内", text:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。" }, 
+] %>
+
+
+
+<main class="p-overview">
+  <div class="l-inner">
+    <% for (let overview_info of overview_infos) { %>
+    <dl class="p-overview__block">
+      <dt class="p-overview__title"><%= overview_info.title %></dt>
+      <dd class="p-overview__text"><%= overview_info.text %></dd>
+    </dl>
+    <% } %>
+    <div class="p-overview__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853398476!2d139.76493611445818!3d35.68124053758042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1642481641075!5m2!1sja!2sjp"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</main>
