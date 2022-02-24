@@ -2,9 +2,9 @@
 
 .p-lower-mv {
   position: relative;
-  height: 28.9vh;
+  height: calc(370 / 1280) * 100vw;
   width: 100%;
-  max-height: rem(370);
+  max-height: rem(370 * 2);
 }
 
 .p-lower-mv__title {
@@ -14,7 +14,7 @@
   z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   @include mq(md) {
     font-size: rem(35);
