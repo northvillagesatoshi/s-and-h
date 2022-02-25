@@ -1,4 +1,4 @@
-@use "global" as *;
+@use "global"as *;
 
 .p-works-detail__title {
     font-size: rem(20);
@@ -33,4 +33,132 @@
 .p-works-detail__text {
     line-height: 1.75;
     letter-spacing: rem(.4);
+}
+
+.p-works-detail__slide {
+    position: relative;
+    overflow: hidden;
+    max-width: rem(600);
+    width: 100%;
+}
+
+.p-works-detail__slide::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+}
+
+.p-works-detail__slide img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+.p-works-detail .swiper-button-next, .p-works-detail .swiper-button-prev {
+    background-color: #111;
+    width: rem(30);
+    height: rem(30);
+    border-radius: 30px;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: '';
+    display: inline-block;
+    width: rem(7.8);
+    height: rem(14.2);
+    background: url(../images/works/arrow-right.svg) no-repeat center;
+    background-size: contain;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: '';
+    display: inline-block;
+    width: rem(7.8);
+    height: rem(14.2);
+    background: url(../images/works/arrow-left.svg) no-repeat center;
+    background-size: contain;
+}
+
+// サムネイル
+
+.works-sub-thumbnail {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.p-works-detail__slide-thumbnail.swiper-slide {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+    opacity: .1;
+
+}
+
+.p-works-detail__slide-thumbnail.swiper-slide-active {
+    opacity: 1;
+}
+
+.p-works-detail__slide-thumbnail.swiper-slide img {
+    width: auto;
+    height: 100%;
+}
+
+
+// サンプルコード
+body {
+    background-color: #2f3640;
+}
+
+.gallery {
+    width: 100%;
+    max-width: 620px;
+    margin: 40px auto;
+    
+    //メインスライド
+    &-slider {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px 0;
+
+        .swiper-slide {
+            width: auto;
+            height: 400px;
+            
+            img {
+                display: block;
+                width: auto;
+                height: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+    
+    //サムネイルスライド
+    &-thumbs {
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+
+        .swiper-slide {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            overflow: hidden;
+            opacity: .1;
+            
+            &-active {
+                opacity: 1;
+            }
+            
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
 }

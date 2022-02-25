@@ -78,9 +78,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // var aboPos = $(".js-mv").offset().top;
 
   // aboPos -= -130;
-  
+
   // $(window).scroll(function () {
-    
+
   //   if ($(window).scrollTop() > aboPos) {
   //     $(".js-to-top").addClass("to-top__scroll");
   //   } else {
@@ -131,15 +131,32 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
-  const subSwiper = new Swiper('.works-sub-swiper', {
-    loop: true,
-    //　自動で画像が切り替わっていく
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    //画像が切り替わるスピード
-    speed: 2000,
-    // If we need pagination
-  })
+ //メインスライド
+var slider = new Swiper ('.gallery-slider', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 6, //スライドの枚数と同じ値を指定
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイルスライド
+var thumbs = new Swiper ('.gallery-thumbs', {
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true,
+});
+
+//3系
+//slider.params.control = thumbs;
+//thumbs.params.control = slider;
+
+//4系～
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;
 });
