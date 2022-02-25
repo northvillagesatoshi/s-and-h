@@ -132,11 +132,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
  //メインスライド
-var slider = new Swiper ('.gallery-slider', {
+const slider = new Swiper ('.gallery-slider', {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
-  loopedSlides: 6, //スライドの枚数と同じ値を指定
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
   navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -144,19 +144,37 @@ var slider = new Swiper ('.gallery-slider', {
 });
 
 //サムネイルスライド
-var thumbs = new Swiper ('.gallery-thumbs', {
+const thumbs = new Swiper ('.gallery-thumbs', {
   slidesPerView: 'auto',
-  spaceBetween: 10,
+  // spaceBetween: 24,
+  //サムネイルの間隔
   centeredSlides: true,
   loop: true,
   slideToClickedSlide: true,
 });
 
-//3系
-//slider.params.control = thumbs;
-//thumbs.params.control = slider;
-
-//4系～
 slider.controller.control = thumbs;
 thumbs.controller.control = slider;
+
+//メインスライド PC
+const sliderPC = new Swiper ('.gallery-slider--pc', {
+  slidesPerView: 1,
+  loop: true,
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイルスライド
+const thumbsPC = new Swiper ('.gallery-thumbs--pc', {
+  slidesPerView: 'auto',
+  spaceBetween: 8,
+  loop: true,
+  slideToClickedSlide: true,
+});
+
+sliderPC.controller.control = thumbsPC;
+thumbsPC.controller.control = sliderPC;
 });
