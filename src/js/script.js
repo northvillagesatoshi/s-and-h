@@ -75,20 +75,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  // var aboPos = $(".js-mv").offset().top;
+  var aboPos = $(".js-mv").offset().top;
 
-  // aboPos -= -130;
+  aboPos -= -130;
 
-  // $(window).scroll(function () {
+  $(window).scroll(function () {
 
-  //   if ($(window).scrollTop() > aboPos) {
-  //     $(".js-to-top").addClass("to-top__scroll");
-  //   } else {
-  //     $(".js-to-top").removeClass("to-top__scroll");
+    if ($(window).scrollTop() > aboPos) {
+      $(".js-to-top").addClass("to-top__scroll");
+    } else {
+      $(".js-to-top").removeClass("to-top__scroll");
 
-  //   }
+    }
 
-  // });
+  });
 
 
   var mySwiper = new Swiper('.swiper-container', {
@@ -132,7 +132,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
  //メインスライド
-const slider = new Swiper ('.gallery-slider', {
+const slider = new Swiper ('.js-works-detail-slide', {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
@@ -144,10 +144,9 @@ const slider = new Swiper ('.gallery-slider', {
 });
 
 //サムネイルスライド
-const thumbs = new Swiper ('.gallery-thumbs', {
+const thumbs = new Swiper ('.js-works-detail-thumbnail', {
   slidesPerView: 'auto',
-  // spaceBetween: 24,
-  //サムネイルの間隔
+  spaceBetween: 24,//サムネイルの間隔
   centeredSlides: true,
   loop: true,
   slideToClickedSlide: true,
@@ -157,7 +156,7 @@ slider.controller.control = thumbs;
 thumbs.controller.control = slider;
 
 //メインスライド PC
-const sliderPC = new Swiper ('.gallery-slider--pc', {
+const sliderPC = new Swiper ('.js-works-detail-slide-pc', {
   slidesPerView: 1,
   loop: true,
   loopedSlides: 8, //スライドの枚数と同じ値を指定
@@ -168,11 +167,12 @@ const sliderPC = new Swiper ('.gallery-slider--pc', {
 });
 
 //サムネイルスライド
-const thumbsPC = new Swiper ('.gallery-thumbs--pc', {
-  slidesPerView: 'auto',
+const thumbsPC = new Swiper ('.js-works-detail-thumbnail-pc', {
+  slidesPerView: 8,//スライドの枚数と同じ値を指定
   spaceBetween: 8,
   loop: true,
   slideToClickedSlide: true,
+
 });
 
 sliderPC.controller.control = thumbsPC;
