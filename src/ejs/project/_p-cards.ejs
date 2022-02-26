@@ -1,3 +1,107 @@
-<div class="p-cards">
-        <%- include('../project/_p-card',{pageTitle:'top-works'}) %>
-</div>
+  <div class="p-cards">
+      <% if( pageTitle == 'top-blog') { %>
+      <% for (let i = 0; i < 3; i++) { %>
+      <a href="#" class="p-card">
+          <div class="p-card__new-label">
+              <%- include('../component/_c-new-label') %>
+          </div>
+          <figure class="p-card__img">
+              <img src="./images/blog/blog<%= i + 1 %>.jpg" alt="" />
+          </figure>
+          <div class="p-card__body">
+              <div class="p-card__title-block">
+                  <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
+              </div>
+              <div class="p-card__text-block">
+                  <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+              </div>
+              <div class="p-card__info">
+                  <span class="p-card__category">カテゴリ</span>
+                  <span class="p-card__date">2021.07.20</span>
+              </div>
+          </div>
+      </a>
+      <% } %>
+      <% } else if ( pageTitle == 'works') { %>
+      <% for (let i = 0; i < 9; i++) { %>
+      <a href="#" class="p-card">
+          <div class="p-card__new-label">
+              <%- include('../component/_c-new-label') %>
+          </div>
+          <figure class="p-card__img">
+              <img src="./images/blog/blog<%= i + 1 %>.jpg" alt="" />
+          </figure>
+          <div class="p-card__body">
+              <div class="p-card__title-block">
+                  <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
+              </div>
+              <div class="p-card__text-block">
+                  <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+              </div>
+              <div class="p-card__info">
+                  <span class="p-card__category">カテゴリ</span>
+                  <span class="p-card__date">2021.07.20</span>
+              </div>
+          </div>
+      </a>
+      <% } %>
+      <% } else { %>
+      <% for (let i = 0; i < 4; i++) { %>
+      <a href="#" class="p-card">
+          <div class="p-card__new-label">
+              <%- include('../component/_c-new-label') %>
+          </div>
+          <figure class="p-card__img">
+              <img src="./images/blog/blog<%= i + 1 %>.jpg" alt="" />
+          </figure>
+          <div class="p-card__body">
+              <div class="p-card__title-block">
+                  <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
+              </div>
+              <div class="p-card__text-block">
+                  <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+              </div>
+              <div class="p-card__info">
+                  <span class="p-card__category">カテゴリ</span>
+                  <span class="p-card__date">2021.07.20</span>
+              </div>
+          </div>
+      </a>
+      <% } %>
+      <% } %>
+  </div>
+  <!-- <a href="#" class="p-card">
+    <figure class="p-card__img">
+        <img src="./images/blog/blog1.jpg" alt="" />
+    </figure>
+    <div class="p-card__body">
+        <div class="p-card__title-block">
+            <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
+        </div>
+        <div class="p-card__text-block">
+            <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+        </div>
+        <div class="p-card__info">
+            <span class="p-card__category">カテゴリ</span>
+            <span class="p-card__date">2021.07.20</span>
+        </div>
+    </div>
+</a>
+
+<a href="#" class="p-card">
+    <figure class="p-card__img">
+        <img src="./images/blog/blog1.jpg" alt="" />
+    </figure>
+    <div class="p-card__body">
+        <div class="p-card__title-block">
+            <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
+        </div>
+        <div class="p-card__text-block">
+            <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+        </div>
+        <div class="p-card__info">
+            <span class="p-card__category">カテゴリ</span>
+            <span class="p-card__date">2021.07.20</span>
+        </div>
+    </div>
+</a> -->
