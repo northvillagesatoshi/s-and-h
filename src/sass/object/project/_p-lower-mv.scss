@@ -2,9 +2,14 @@
 
 .p-lower-mv {
   position: relative;
-  height: calc(370 / 1280) * 100vw;
   width: 100%;
-  max-height: rem(370 * 2);
+  height: calc(425 / 375) * 100vw;
+  max-height: rem(375 * 2);
+
+  @include mq(md) {
+    height: calc(370 / 1280) * 100vw;
+    max-height: rem(370 * 2);
+  }
 }
 
 .p-lower-mv__title {
@@ -34,7 +39,12 @@
 .p-lower-mv--works {
   // background: center / cover no-repeat url("../../../images/content/content-mv.jpg");
   background-image: url(../../../images/works/works1.jpg);
-  background-position: inherit;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.p-lower-mv--overview {
+  background: center / cover no-repeat
+    url("../../../images/overview/overview1.jpg");
 }
