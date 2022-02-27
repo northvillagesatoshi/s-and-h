@@ -1,8 +1,0 @@
-@use "global" as *;
-
-.p-sub-cards {
-    @include mq(md) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: rem(32);
-    }
-}
