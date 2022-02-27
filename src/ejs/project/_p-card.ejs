@@ -52,13 +52,13 @@
     <% for (let i = 0; i < 4; i++) { %>
         <a href="#" class="p-card">
             <figure class="p-card__img">
-                <img src="./images/<%= pass %>/<%= pass %><%= i + 1 %>.jpg" alt="" />
+                <img src="./images/<%= path %>/<%= path %><%= i + 1 %>.jpg" alt="" />
             </figure>
             <div class="p-card__body">
                 <div class="p-card__title-block">
                     <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
                 </div>
-                <div class="p-card__text-block">
+                <div class="p-card__text-block p-card__text-block--hidden">
                     <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
                 </div>
                 <div class="p-card__info">
