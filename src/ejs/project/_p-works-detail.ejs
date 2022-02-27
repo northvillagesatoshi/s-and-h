@@ -14,7 +14,9 @@
         <div class="swiper p-works-detail__slider js-works-detail-slide">
             <div class="swiper-wrapper">
                 <% for (var i=0; i < 8; i++) { %>
-                <div class="swiper-slide p-works-detail__slide"><img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt=""></div>
+                    <div class="swiper-slide p-works-detail__slide">
+                        <img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt="">
+                    </div>
                 <% } %>
             </div>
             <div class="swiper-button-prev"></div>
@@ -24,9 +26,9 @@
         <div class="swiper p-works-detail__thumbnails js-works-detail-thumbnail">
             <div class="swiper-wrapper">
                 <% for (var i=0; i < 8; i++) { %>
-                <div class="swiper-slide p-works-detail__slide-thumbnail">
-                    <img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt="">
-                </div>
+                    <div class="swiper-slide p-works-detail__slide-thumbnail">
+                        <img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt="">
+                    </div>
                 <% } %>
             </div>
         </div>
@@ -36,7 +38,7 @@
         <div class="swiper p-works-detail__slider js-works-detail-slide-pc">
             <div class="swiper-wrapper">
                 <% for (var i=0; i < 8; i++) { %>
-                <div class="swiper-slide p-works-detail__slide"><img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt=""></div>
+                    <div class="swiper-slide p-works-detail__slide"><img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt=""></div>
                 <% } %>
             </div>
             <div class="swiper-button-prev"></div>
@@ -90,6 +92,10 @@
             <a class="previouspostslink" rel="prev" href="/example.com/blogs/">prev</a>
             <a class="page larger" title="制作実績一覧へ" href="works.html">一覧</a>
             <a class="nextpostslink" rel="next" href="/example.com/blogs/page/3/">next</a>
+        </div>
+        
+        <div class="p-works-detail__cards">
+            <%- include('../project/_p-cards',{max: '4', modifier:'p-cards--col-4',path: 'works'}) %>
         </div>
 
     </div>
