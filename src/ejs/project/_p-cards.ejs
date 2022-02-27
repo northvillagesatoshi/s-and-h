@@ -1,3 +1,5 @@
 <div class="p-cards <%= modifier %>">
-    <%- include('../project/_p-card') %>
+    <% for (let i = 0; i < max; i++) { %>
+        <%- include('../project/_p-card',{num: i}) %>
+   <% } %>
 </div>
