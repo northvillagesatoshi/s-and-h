@@ -8,3 +8,10 @@
         grid-column-gap: rem(25);
     }
 }
+
+.p-cards--blog {
+    @include mq(md) {
+        grid-column-gap: rem(25);
+        grid-row-gap: rem(48);
+    }
+}
