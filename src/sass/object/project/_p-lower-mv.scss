@@ -37,7 +37,6 @@
   background-size: cover;
 }
 .p-lower-mv--works {
-  // background: center / cover no-repeat url("../../../images/content/content-mv.jpg");
   background-image: url(../../../images/works/works1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -47,4 +46,8 @@
 .p-lower-mv--overview {
   background: center / cover no-repeat
     url("../../../images/overview/overview1.jpg");
+}
+.p-lower-mv--blog {
+  background: center / cover no-repeat
+    url("../../../images/blog/blog-mv.jpg");
 }
