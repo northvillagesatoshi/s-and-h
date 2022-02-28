@@ -12,4 +12,8 @@
 
 .p-connection-blog__cards {
   margin-top: rem(32);
+
+  @include mq(md) {
+    margin-top: rem(82);
+  }
 }
