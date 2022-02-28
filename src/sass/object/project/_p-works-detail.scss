@@ -1,28 +1,5 @@
 @use "global"as *;
 
-.p-works-detail__title {
-    font-size: rem(20);
-    letter-spacing: rem(.4);
-    line-height: 1.75;
-    font-weight: $regular;
-}
-
-.p-works-detail__category {
-    max-width: rem(130);
-    width: 100%;
-    height: rem(40);
-    border: 1px solid $white;
-}
-
-.p-works-detail-category {
-    color: $white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-    letter-spacing: rem(2);
-}
-
 .p-works-detail .swiper-button-next,
 .p-works-detail .swiper-button-prev {
     background-color: $black;
@@ -67,9 +44,10 @@
 .p-works-detail__gallery {
     max-width: rem(600);
     width: 100%;
-    margin: 0 auto;
+    margin: rem(16) auto 0;
     @include mq(md) {
         max-width: rem(800);
+        margin-top: rem(32);
     }
 }
 
@@ -141,14 +119,43 @@
     object-fit: cover;
 }
 
-.p-works-detail__text-block {
+.p-works-detail__comment {
+    margin-top: rem(56);
+    @include mq(md) {
+        margin-top: rem(103);
+    }
+}
+
+.p-works-detail__comment-inner {
+    margin: 0 auto;
+    max-width: rem(650);
+    width: 100%;
+    height: inherit;
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+
+    @include mq(md) {
+        max-width: rem(850);
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
+}
+
+.p-works-detail__comment-block {
     position: relative;
     padding: 56px 10px 33px;
     border: solid 1px $white;
 }
 
+.p-works-detail__comment-block:not(:first-child) {
+    margin-top: rem(55);
+    @include mq(md) {
+        margin-top: rem(71);
+    }
+}
 
-.p-works-detail__sub-title {
+
+.p-works-detail__comment-sub-title {
     position: absolute;
     top: -24px;
     left: 24px;
@@ -162,7 +169,14 @@
     border-radius: rem(50);
 }
 
-.p-works-detail__text {
+.p-works-detail__comment-text {
     line-height: 1.75;
     letter-spacing: rem(.4);
+}
+
+.p-works-detail__cards {
+    margin-top: rem(120);
+    @include mq(md) {
+        margin-top: rem(104);
+    }
 }

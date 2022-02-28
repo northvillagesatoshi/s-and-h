@@ -1,22 +1,18 @@
 <div class="p-works-detail">
-    <div class="l-inner">
-        <h1 class="p-works-detail__title">〇〇株式会社&emsp;制作実績</h1>
-        <time datetime="2020-06-13">2020.06.13</time>
-
-        <div class="p-works-detail__category">
-            <a href="" class="p-works-detail-category">カテゴリ1</a>
+    <div class="p-works-detail__inner">
+        <div class="p-works-detail__head">
+            <%- include('../project/_p-detail-head',{text: '〇〇株式会社　様制作実績'}) %>
         </div>
     </div>
 
     <!-- サンプル -->
     <div class="p-works-detail__gallery js-mv u-mobile">
-
         <div class="swiper p-works-detail__slider js-works-detail-slide">
             <div class="swiper-wrapper">
                 <% for (var i=0; i < 8; i++) { %>
-                    <div class="swiper-slide p-works-detail__slide">
-                        <img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt="">
-                    </div>
+                <div class="swiper-slide p-works-detail__slide">
+                    <img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt="">
+                </div>
                 <% } %>
             </div>
             <div class="swiper-button-prev"></div>
@@ -26,9 +22,9 @@
         <div class="swiper p-works-detail__thumbnails js-works-detail-thumbnail">
             <div class="swiper-wrapper">
                 <% for (var i=0; i < 8; i++) { %>
-                    <div class="swiper-slide p-works-detail__slide-thumbnail">
-                        <img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt="">
-                    </div>
+                <div class="swiper-slide p-works-detail__slide-thumbnail">
+                    <img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt="">
+                </div>
                 <% } %>
             </div>
         </div>
@@ -38,7 +34,7 @@
         <div class="swiper p-works-detail__slider js-works-detail-slide-pc">
             <div class="swiper-wrapper">
                 <% for (var i=0; i < 8; i++) { %>
-                    <div class="swiper-slide p-works-detail__slide"><img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt=""></div>
+                <div class="swiper-slide p-works-detail__slide"><img src="//into-the-program.com/demo/images/sample00<%= i + 1 %>.jpg" alt=""></div>
                 <% } %>
             </div>
             <div class="swiper-button-prev"></div>
@@ -55,49 +51,49 @@
             </div>
         </div>
     </div>
-    <!-- サンプル -->
 
-
-
-
-    <div class="p-works-detail__contents-inner l-inner">
-        <div class="p-works-detail__text-block">
-            <div class="p-works-detail__head">
-                <h2 class="p-works-detail__sub-title">制作のポイント</h2>
+    <div class="p-works-detail__comment">
+        <div class="p-works-detail__comment-inner">
+            <div class="p-works-detail__comment-block">
+                <div class="p-works-detail__comment-head">
+                    <h2 class="p-works-detail__comment-sub-title">制作のポイント</h2>
+                </div>
+                <div class="p-works-detail__comment-body">
+                    <p class="p-works-detail__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
             </div>
-            <div class="p-works-detail__body">
-                <p class="p-works-detail__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+            <div class="p-works-detail__comment-block">
+                <div class="p-works-detail__comment-head">
+                    <h2 class="p-works-detail__comment-sub-title">デザインのポイント</h2>
+                </div>
+                <div class="p-works-detail__comment-body">
+                    <p class="p-works-detail__comment-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
             </div>
+
+            <div class="p-works-detail__comment-block">
+                <div class="p-works-detail__comment-head">
+                    <h2 class="p-works-detail__comment-sub-title">その他</h2>
+                </div>
+                <div class="p-works-detail__comment-body">
+                    <p class="p-works-detail__comment-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+            </div>
+
+            <div class="wp-pagenavi">
+                <a class="previouspostslink" rel="prev" href="/example.com/blogs/">prev</a>
+                <a class="page larger" title="制作実績一覧へ" href="works.html">一覧</a>
+                <a class="nextpostslink" rel="next" href="/example.com/blogs/page/3/">next</a>
+            </div>
+
+
         </div>
-
-        <div class="p-works-detail__text-block">
-            <div class="p-works-detail__head">
-                <h2 class="p-works-detail__sub-title">デザインのポイント</h2>
-            </div>
-            <div class="p-works-detail__body">
-                <p class="p-works-detail__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            </div>
+    </div>
+    <div class="p-works-detail__cards">
+        <div class="l-inner">
+            <%- include('../project/_p-connection-blog') %>
         </div>
-
-        <div class="p-works-detail__text-block">
-            <div class="p-works-detail__head">
-                <h2 class="p-works-detail__sub-title">その他</h2>
-            </div>
-            <div class="p-works-detail__body">
-                <p class="p-works-detail__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            </div>
-        </div>
-
-        <div class="wp-pagenavi">
-            <a class="previouspostslink" rel="prev" href="/example.com/blogs/">prev</a>
-            <a class="page larger" title="制作実績一覧へ" href="works.html">一覧</a>
-            <a class="nextpostslink" rel="next" href="/example.com/blogs/page/3/">next</a>
-        </div>
-        
-        <div class="p-works-detail__cards">
-            <%- include('../project/_p-cards',{max: '4', modifier:'p-cards--col-4',path: 'works'}) %>
-        </div>
-
     </div>
 </div>
 

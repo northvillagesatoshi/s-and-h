@@ -1,0 +1,45 @@
+@use "global"as *;
+
+.p-detail-head__inner {
+    margin: 0 auto;
+    max-width: rem(650);
+    width: 100%;
+    height: inherit;
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+
+    @include mq(md) {
+        max-width: rem(850);
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
+}
+
+.p-detail-head__title {
+    font-size: rem(20);
+    letter-spacing: rem(.4);
+    line-height: 1.75;
+    font-weight: $regular;
+}
+
+.p-detail-head__info-block {
+    display: flex;
+    align-items: center;
+    margin-top: rem(16);
+
+    @include mq(md) {
+        margin-top: rem(32);
+    }
+}
+
+.p-detail-head__time {
+    margin-right: rem(30);
+}
+
+.p-detail-head__category {
+    color: $white;
+    display: inline-block;
+    padding: rem(7) rem(22.6);
+    letter-spacing: rem(2);
+    border: 1px solid $white;
+}
