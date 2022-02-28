@@ -2,9 +2,28 @@
 
 .p-cards {
     display: grid;
+}
+
+.p-cards--top {
     grid-row-gap: rem(24);
     @include mq(md) {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: rem(25);
+    }
+}
+
+.p-cards--blog {
+    grid-row-gap: rem(24);
+    @include mq(md) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: rem(25);
+        grid-row-gap: rem(48);
+    }
+}
+
+.p-cards--col-4 {
+    @include mq(md) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: rem(32);
     }
 }

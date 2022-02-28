@@ -1,7 +1,9 @@
 <main class="p-blog">
   <div class="l-inner">
     <div class="p-blog__tab"><%- include('../component/_c-tab') %></div>
-    <div class="p-blog__cards"><%- include('../project/_p-cards') %></div>
+    <div class="p-blog__cards">
+      <%- include('../project/_p-cards',{max: '9', modifier:'p-cards--blog',path: 'blog'}) %>
+    </div>
   </div>
   <div class="l-pager"><%- include('../component/_c-pager') %></div>
 </main>

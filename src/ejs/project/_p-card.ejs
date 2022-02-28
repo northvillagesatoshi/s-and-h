@@ -1,51 +1,25 @@
-<a href="#" class="p-cards__item p-card">
-    <%- include('../component/_c-new-label') %>
-    <figure class="p-card__img">
-        <img src="./images/blog/blog1.jpg" alt="" />
+<a href="#" class="p-card">
+    <% if( num == 0 && max != 4) { %>
+        <div class="p-card__new-label">
+            <%- include('../component/_c-new-label') %>
+        </div>
+        <% } %>
+        <figure class="p-card__img">
+        <img src="./images/<%= path %>/<%= path %><%= num + 1 %>.jpg" alt="" />
     </figure>
     <div class="p-card__body">
         <div class="p-card__title-block">
             <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
         </div>
-        <div class="p-card__text-block">
-            <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-        </div>
-        <div class="p-card__info">
-            <span class="p-card__category">カテゴリ</span>
-            <span class="p-card__date">2021.07.20</span>
-        </div>
-    </div>
-</a>
-
-<a href="#" class="p-cards__item p-card">
-    <figure class="p-card__img">
-        <img src="./images/blog/blog1.jpg" alt="" />
-    </figure>
-    <div class="p-card__body">
-        <div class="p-card__title-block">
-            <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-        </div>
-        <div class="p-card__text-block">
-            <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-        </div>
-        <div class="p-card__info">
-            <span class="p-card__category">カテゴリ</span>
-            <span class="p-card__date">2021.07.20</span>
-        </div>
-    </div>
-</a>
-
-<a href="#" class="p-cards__item p-card">
-    <figure class="p-card__img">
-        <img src="./images/blog/blog1.jpg" alt="" />
-    </figure>
-    <div class="p-card__body">
-        <div class="p-card__title-block">
-            <h3 class="p-card__title">タイトルが入ります。タイトルが入ります。</h3>
-        </div>
-        <div class="p-card__text-block">
-            <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-        </div>
+        <% if( max == 4) { %>
+            <div class="p-card__text-block u-mobile">
+                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+            </div>
+        <% } else { %>
+            <div class="p-card__text-block">
+                <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+            </div>
+        <% } %>
         <div class="p-card__info">
             <span class="p-card__category">カテゴリ</span>
             <span class="p-card__date">2021.07.20</span>
