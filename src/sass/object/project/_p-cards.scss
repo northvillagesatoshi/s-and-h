@@ -22,6 +22,7 @@
 }
 
 .p-cards--col-4 {
+    grid-row-gap: rem(24);
     @include mq(md) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: rem(32);

@@ -175,7 +175,12 @@
   }
 }
 
-.p-blog-detail__list {
+.p-blog-detail__connection-blog {
+  margin-top: rem(120);
+
+  @include mq(md) {
+    margin-top: rem(104);
+  }
 }
 
 .p-blog-detail__next {

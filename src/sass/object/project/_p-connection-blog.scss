@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.p-connection-blog__title {
+  font-size: rem(16);
+  background-color: $black-sub;
+  padding-top: rem(8);
+
+  padding-bottom: rem(8);
+  border: #fff solid 1px;
+  text-align: center;
+}
+
+.p-connection-blog__cards {
+  margin-top: rem(32);
+
+  @include mq(md) {
+    margin-top: rem(82);
+  }
+}
