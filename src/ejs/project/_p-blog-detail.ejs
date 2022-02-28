@@ -1,0 +1,106 @@
+<article class="p-blog-detail">
+  <div class="l-inner p-blog-detail__inner">
+    <!-- lebel1 -->
+    <div class="p-blog-detail__lebel1">
+      <h1 class="p-blog-detail__lebel1-title">
+        タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+      </h1>
+      <div class="p-blog-detail__info">
+        <time datetime="2020-06-13">2020/06/13</time>
+        <div class="p-blog-detail__catecory">
+          <%- include('../component/_c-category',{text:'カテゴリー１', link:'#',
+          backcolor:'black'}) %>
+        </div>
+      </div>
+      <div class="p-blog-detail__img">
+        <img src="../../images/blog-detail/blog-detail1.jpg" alt="" />
+      </div>
+      <p class="p-blog-detail__lebel1-text">
+        <%-
+        include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+        %>
+      </p>
+    </div>
+
+    <!-- lebel2 -->
+    <div class="p-blog-detail__lebel2">
+      <h2 class="p-blog-detail__lebel2-title">見出し2</h2>
+      <p class="p-blog-detail__lebel2-text">
+        <%-
+        include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+        %>
+      </p>
+    </div>
+
+    <!-- lebel3 -->
+    <div class="p-blog-detail__lebel3">
+      <h3 class="p-blog-detail__lebel3-title">見出し3見出し3見出し3</h3>
+      <p class="p-blog-detail__lebel3-text">
+        <%-
+        include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+        %>
+      </p>
+      <div class="p-blog-detail__img">
+        <img src="../../images/blog-detail/blog-detail2.jpg" alt="" />
+      </div>
+      <ol
+        class="p-blog-detail__lebel3-block p-blog-detail__lebel3-block--list-type-disc"
+      >
+        <li class="p-blog-detail__lebel3-item">
+          <%-
+          include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'リストが入ります。リストが入ります。リストが入ります。'})
+          %>
+        </li>
+        <li class="p-blog-detail__lebel3-item">
+          <%-
+          include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'リストが入ります。リストが入ります。リストが入ります。'})
+          %>
+        </li>
+        <li class="p-blog-detail__lebel3-item">
+          <%-
+          include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'リストが入ります。リストが入ります。リストが入ります。'})
+          %>
+        </li>
+        <li class="p-blog-detail__lebel3-item">
+          <%-
+          include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'リストが入ります。リストが入ります。リストが入ります。'})
+          %>
+        </li>
+      </ol>
+      <ul
+        class="p-blog-detail__lebel3-block p-blog-detail__lebel3-block--list-type-number"
+      >
+        <li class="p-blog-detail__lebel3-item">
+          <%-
+          include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'リストが入ります。リストが入ります。リストが入ります。'})
+          %>
+        </li>
+        <li class="p-blog-detail__lebel3-item">
+          <%-
+          include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'リストが入ります。リストが入ります。リストが入ります。'})
+          %>
+        </li>
+        <li class="p-blog-detail__lebel3-item">
+          <%-
+          include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'リストが入ります。リストが入ります。リストが入ります。'})
+          %>
+        </li>
+        <li class="p-blog-detail__lebel3-item">
+          <%-
+          include('../component/_c-normal-text',{normal_text_modifier:'c-normal-text--blog-detail',text:'リストが入ります。リストが入ります。リストが入ります。'})
+          %>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-blog-detail__link">
+      <p class="p-blog-detail__prev"><a href="#">prev</a></p>
+      <p class="p-blog-detail__list"><a href="#">一覧</a></p>
+      <p class="p-blog-detail__next"><a href="#">next</a></p>
+    </div>
+
+  </div>
+  <div class="l-inner p-blog-detail__connection-blog">
+  <%- include('../project/_p-connection-blog') %>
+</div>
+</article>

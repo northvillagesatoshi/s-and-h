@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head', {pageTitle: 'CodeUpsチーム開発：ブログ詳細'}) %>
+  <body>
+    <%- include('./common/_p-header') %>
+    <div class="l-breadcrumb l-breadcrumb--blog-detail">
+      <%- include('./component/_c-breadcrumb',{page_title:'ブログ記事一覧'}) %>
+    </div>
+    <div class="l-blog-detail js-mv">
+      <%- include('./project/_p-blog-detail') %>
+  </div>
+   
+
+    <section class="l-contact">
+      <%- include('./project/_p-contact') %>
+    </section>
+    <%-include('./component/_c-to-top') %> <%- include('./common/_p-footer') %>
+  </body>
+</html>

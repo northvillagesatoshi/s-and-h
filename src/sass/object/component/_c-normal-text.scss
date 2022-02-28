@@ -1,12 +1,19 @@
 @use "global" as *;
-.normal-text{
-    font-size: rem(16);
-    letter-spacing: rem(2);
-    color: $white;
+.c-normal-text {
+  font-size: rem(16);
+  letter-spacing: rem(2);
+  color: $white;
 
-    @include mq(md) {
-        line-height: 2.18;
-        letter-spacing: rem(0.5); 
-    }
+  @include mq(md) {
+    line-height: 2.18;
+    letter-spacing: rem(0.5);
+  }
 }
+
+.c-normal-text--blog-detail {
+  line-height: 2.1875;
+  letter-spacing: rem(0.04);
+  display: inline;
+}
+
 

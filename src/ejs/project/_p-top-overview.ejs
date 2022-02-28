@@ -1,18 +1,17 @@
 <div class="p-top-overview">
-  <div class="p-top-overview__line">
-      <%- include('../component/_c-line') %></div>
+  <div class="p-top-overview__line"><%- include('../component/_c-line') %></div>
 
   <div class="p-top-overview__inner l-inner">
-    
     <div class="p-top-overview__title">
-        <%- include('../component/_c-section-header__title',{text:'会社概要'}) %>
-        <div
-          class="p-top-section-title__block p-top-section-title__block--top-overview"
-        >
-          <%-
-          include('../component/_c-section-header__sub-title',{text:'overview'}) %>
-        </div>
+      <%- include('../component/_c-section-header__title',{text:'会社概要'}) %>
+      <div
+        class="p-top-section-title__block p-top-section-title__block--top-overview"
+      >
+        <%-
+        include('../component/_c-section-header__sub-title',{text:'overview'})
+        %>
       </div>
+    </div>
     <div class="p-top-overview__block">
       <div class="p-top-overview__container">
         <div class="p-top-overview__img">
@@ -24,12 +23,14 @@
               メインタイトルが入ります。
             </h3>
             <p class="p-top-overview__text normal-text">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              <%-
+              include('../component/_c-normal-text',{normal_text_modifier:"",text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+              %>
             </p>
             <div class="p-top-overview__btn">
-                <%- include('../component/_c-btn',{text:'詳しく見る', link:'#',
-                backcolor:'black'}) %>
-              </div>
+              <%- include('../component/_c-btn',{text:'詳しく見る', link:'#',
+              backcolor:'black'}) %>
+            </div>
           </div>
         </div>
       </div>
