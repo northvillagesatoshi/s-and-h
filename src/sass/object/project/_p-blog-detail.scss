@@ -159,19 +159,17 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: rem(16);
   display: inline-block;
   text-align: center;
-  width: rem(71);
-
+  padding-left: rem(13);
+  padding-right: rem(13);
 }
 
 .p-blog-detail__prev,
-.p-blog-detail__list{
-
+.p-blog-detail__list {
   @include mq(md) {
-    margin-right:rem(61);
+    margin-right: rem(61);
   }
 }
 
