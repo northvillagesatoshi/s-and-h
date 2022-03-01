@@ -8,5 +8,13 @@
       <p>&nbsp;&gt;&nbsp;</p>
       <a href="#"><%= page_title %></a>
     </li>
+
+    <% if( ! posttitle == "" ) { %>
+      <li class="c-breadcrumb__item">
+        <p>&nbsp;&gt;&nbsp;</p>
+        <a href="#" class="c-breadcrumb__link"><%= posttitle %></a>
+      </li>
+      <% } %>
+  
   </ul>
 </div>
