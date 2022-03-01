@@ -141,39 +141,6 @@
     }
 }
 
-.p-works-detail__comment-block {
-    position: relative;
-    padding: 56px 10px 33px;
-    border: solid 1px $white;
-}
-
-.p-works-detail__comment-block:not(:first-child) {
-    margin-top: rem(55);
-    @include mq(md) {
-        margin-top: rem(71);
-    }
-}
-
-
-.p-works-detail__comment-sub-title {
-    position: absolute;
-    top: -24px;
-    left: 24px;
-    display: inline-block;
-    padding: rem(7) rem(23);
-    font-size: rem(20);
-    font-weight: $regular;
-    letter-spacing: rem(.4);
-    background-color: $black;
-    border: solid 1px $white;
-    border-radius: rem(50);
-}
-
-.p-works-detail__comment-text {
-    line-height: 1.75;
-    letter-spacing: rem(.4);
-}
-
 .p-works-detail__cards {
     margin-top: rem(120);
     @include mq(md) {
