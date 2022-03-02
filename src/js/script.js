@@ -78,9 +78,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   var aboPos = $(".js-mv").offset().top;
 
   aboPos -= -130;
-  
+
   $(window).scroll(function () {
-    
+
     if ($(window).scrollTop() > aboPos) {
       $(".js-to-top").addClass("to-top__scroll");
     } else {
@@ -130,4 +130,51 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       el: '.swiper-scrollbar',
     },
   });
+
+ //メインスライド
+const slider = new Swiper ('.js-works-detail-slide', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイルスライド
+const thumbs = new Swiper ('.js-works-detail-thumbnail', {
+  slidesPerView: 'auto',
+  spaceBetween: 24,//サムネイルの間隔
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true,
+});
+
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;
+
+//メインスライド PC
+const sliderPC = new Swiper ('.js-works-detail-slide-pc', {
+  slidesPerView: 1,
+  loop: true,
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
+//サムネイルスライド
+const thumbsPC = new Swiper ('.js-works-detail-thumbnail-pc', {
+  slidesPerView: 8,//スライドの枚数と同じ値を指定
+  spaceBetween: 8,
+  loop: true,
+  slideToClickedSlide: true,
+
+});
+
+sliderPC.controller.control = thumbsPC;
+thumbsPC.controller.control = sliderPC;
 });

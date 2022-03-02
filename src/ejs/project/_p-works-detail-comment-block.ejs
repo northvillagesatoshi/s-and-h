@@ -1,0 +1,15 @@
+<% let ary = [
+    { title:"制作のポイント", text:"制作のポイントのテキストが入ります。" },
+    { title:"デザインのポイント", text:"デザインのポイントのテキストが入ります。" }, 
+    { title:"その他", text:"その他のテキストが入ります。" } 
+] %>
+<% ary.forEach(function (value) { %>
+<div class="p-works-detail-comment-block">
+    <div class="p-works-detail-comment-head">
+        <h2 class="p-works-detail-comment-sub-title"><%= value.title %></h2>
+    </div>
+    <div class="p-works-detail-comment-body">
+        <p class="p-works-detail-text"><%= value.text %></p>
+    </div>
+</div>
+<% }); %>
