@@ -1,0 +1,14 @@
+<div class="p-lower-mv--test js-mv">
+    <% if( page == 'contact' ) { %>
+        <picture class="p-lower-mv__img-wrapper">
+            <source media="(min-width: 768px)" srcset="../images/contact/contact-mv.jpg" />
+            <img src="../images/contact/contact-mv-sp.jpg" alt="">
+        </picture>
+      
+    <% } else if ( page == 'blog') { %>
+        <figure>
+            <img src="../images/blog/blog-mv.jpg" alt="">
+        </figure>
+    <% } %>
+    <h1 class="p-lower-mv__title--test"><%= text %></h1>
+</div>

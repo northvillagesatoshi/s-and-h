@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head', {pageTitle: 'CodeUpsチーム開発：お問い合わせ'}) %>
+
+<body>
+    <%- include('./common/_p-header') %>
+    <section class="l-lower-mv--contact js-mv">
+        <%- include('./project/_p-lower-mv-test',{text:'お問い合わせ', page: 'contact'}) %>
+    </section>
+
+    <div class="l-breadcrumb">
+        <%- include('./component/_c-breadcrumb',{page_title:'お問い合わせ', posttitle:''}) %>
+    </div>
+
+    <section class="l-contact-form">
+        <div class="l-inner">
+            <div class="p-contact__form-block">
+                <%-include('./project/_p-contact-form') %>
+            </div>
+        </div>
+    </section>
+
+
+    <%-include('./component/_c-to-top') %>
+    <%- include('./common/_p-footer') %>
+</body>
+
+</html>
