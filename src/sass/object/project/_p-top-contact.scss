@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-contact {
+.p-top-contact {
   background: $bg-gray;
   padding-top: rem(68);
   padding-bottom: rem(65);
@@ -10,24 +10,24 @@
   }
 }
 
-.p-contact__header {
+.p-top-contact__header {
   position: relative;
 }
 
-.p-contact__text-block {
+.p-top-contact__text-block {
   margin-top: rem(20);
   @include mq(md) {
     text-align: center;
   }
 }
 
-.p-contact__text {
+.p-top-contact__text {
   font-size: rem(16);
   letter-spacing: rem(2);
   color: $white;
 }
 
-.p-contact__btn {
+.p-top-contact__btn {
   margin-top: rem(40);
   margin-left: auto;
   margin-right: auto;
