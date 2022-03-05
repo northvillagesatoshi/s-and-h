@@ -2,7 +2,9 @@
 
 .l-contact-complete {
     margin-top: rem(130);
+    margin-bottom: rem(120);
     @include mq(md) {
         margin-top: rem(200);
+        margin-bottom: rem(150);
     }
 }
