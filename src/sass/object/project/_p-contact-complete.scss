@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.p-contact-complete__inner {
+    text-align: center;
+}
+
+.p-contact-complete__text-block {
+    margin-top: rem(80);
+}
+
+.p-contact-complete__btn {
+    margin-top: rem(80);
+    text-transform: uppercase;
+}
