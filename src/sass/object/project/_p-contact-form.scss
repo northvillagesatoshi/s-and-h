@@ -20,8 +20,7 @@
     margin-top: rem(32);
 }
 
-.p-contact-form input[type="text"],
-.p-contact-form input[type="email"] {
+.p-contact-form input {
     padding: 8px 10px;
     background-color: #fff;
     color: #000;
@@ -69,4 +68,28 @@
         margin-top: rem(56);
         text-align: center;
     }
+}
+
+.p-contact-form__btn-block input {
+    display: inline-block;
+    padding: rem(13) 0;
+    width: 100%;
+    color: $black-sub;
+    letter-spacing: rem(2);
+    background-color: $white;
+    @include mq(md) {
+        max-width: rem(360);
+        padding: rem(18) 0;
+    }
+}
+
+.p-contact-form--warning input,
+.p-contact-form--warning textarea {
+    background-color: #ffdcdc;
+}
+
+.form-invalid {
+    color: #f50000;
+    font-size: 12px;
+    padding-left: 12px;
 }

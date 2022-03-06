@@ -1,24 +1,25 @@
 <div class="p-contact-form">
-    <form action="">
+    <div class="err-msg-name"></div>
+    <form action="" method="post">
         <% let ary = [
             { label:"※会社名",type:'text',id:'company' },
             { label:"※お名前",type:'text',id:'name' }, 
-            { label:"※ふりがな",type:'text',id:'subName' }, 
+            { label:"※ふりがな",type:'text',id:'subName'}, 
             { label:"※メールアドレス",type:'email',id:'mail' }
         ] %>
         <% ary.forEach(function (value) { %>
             <div class="p-contact-form__text-block">
-                <label for="<%= value.id %>"><%= value.label %></label>
-                <input id="<%= value.id %>" type="<%= value.type %>" name="※会社名" placeholder="テキストがはいります">
+                    <label for="<%= value.id %>"><%= value.label %></label>
+                    <input id="<%= value.id %>" type="<%= value.type %>" name="※会社名" placeholder="テキストがはいります">
             </div>
         <% }); %>
-        <div class="p-contact-form__text-block">
+        <div class="p-contact-form__text-block p-contact-form--warning">
             <label for="text">※お問い合わせ内容</label>
             <textarea id="text" placeholder="お問い合わせ内容"></textarea>
         </div>
 
         <div class="p-contact-form__btn-block">
-            <%- include('../component/_c-btn',{text:'送信', link:'#', backcolor:'black'}) %>
+        <input type="submit" class="submit" value="送信">
         </div>
 
         
