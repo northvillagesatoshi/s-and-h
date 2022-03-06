@@ -178,38 +178,4 @@ const thumbsPC = new Swiper ('.js-works-detail-thumbnail-pc', {
 sliderPC.controller.control = thumbsPC;
 thumbsPC.controller.control = sliderPC;
 
-// エラーメッセージ
-  window.addEventListener('DOMContentLoaded', () => {
-    // 「送信」ボタンの要素を取得
-    const submit = document.querySelector('.submit');
-
-  // 「送信」ボタンの要素にクリックイベントを設定する
-    submit.addEventListener('click', (event) => { 
-      // デフォルトアクションをキャンセル
-      e.preventDefault();
-
-      // 「お名前」入力欄の空欄チェック
-        // フォームの要素を取得
-        const name = document.querySelector('#name');
-
-        // エラーメッセージを表示させる要素を取得
-        const errMsgName = document.querySelector('.err-msg-name');
-
-        if(!name.value){
-          // クラスを追加(エラーメッセージを表示する)
-          errMsgName.classList.add('form-invalid');
-          // エラーメッセージのテキスト
-          errMsgName.textContent = 'お名前が入力されていません';
-          // クラスを追加(フォームの枠線を赤くする)
-          name.classList.add('p-contact-form--warning');
-          // 後続の処理を止める
-          return;
-      }else{
-          // エラーメッセージのテキストに空文字を代入
-          errMsgName.textContent ='';
-          // クラスを削除
-          name.classList.remove('input-invalid');
-      }
-    }, false );
-  })
 });
