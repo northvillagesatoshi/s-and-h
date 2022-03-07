@@ -1,0 +1,20 @@
+@use "global"as *;
+
+.p-lower-mv--test {
+  position: relative;
+  width: 100%;
+  height: calc(425 / 375) * 100vw;
+  max-height: rem(375 * 2);
+
+  @include mq(md) {
+    height: calc(370 / 1280) * 100vw;
+    max-height: rem(370 * 2);
+  }
+}
+
+.p-lower-mv__title--test {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

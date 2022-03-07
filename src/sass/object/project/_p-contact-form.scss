@@ -1,0 +1,103 @@
+@use "global"as *;
+
+.p-contact__form {
+    margin-top: rem(32);
+
+    @include mq(md) {
+        max-width: rem(852);
+        width: 100%;
+        margin-top: rem(30);
+        margin-right: auto;
+        text-align: right;
+    }
+}
+
+.p-contact-form__text-block {
+    @include mq(md) {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+    }
+}
+
+.p-contact-form__text-block:not(:first-child) {
+    margin-top: rem(32);
+}
+
+.p-contact-form input {
+    padding: 8px 10px;
+    background-color: #fff;
+    color: $black-sub;
+    width: 100%;
+    font-size: rem(14);
+    letter-spacing: rem(.7);
+
+    @include mq(md) {
+        max-width: rem(540);
+    }
+}
+
+.p-contact-form label {
+    font-size: rem(14);
+    letter-spacing: rem(.7);
+
+    @include mq(md) {
+        margin-right: rem(24);
+    }
+}
+
+.p-contact-form input,
+.p-contact-form textarea {
+    margin-top: rem(16);
+}
+
+.p-contact-form textarea {
+    padding: 8px 10px;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    font-size: rem(14);
+    letter-spacing: rem(.7);
+    height: 250px;
+
+    @include mq(md) {
+        max-width: rem(540);
+    }
+}
+
+.p-contact-form__btn-block {
+    margin-top: rem(48);
+
+    @include mq(md) {
+        margin-top: rem(56);
+        text-align: right;
+        margin-right: rem(90);
+    }
+}
+
+.p-contact-form__btn-block input {
+    display: inline-block;
+    padding: rem(13) 0;
+    width: 100%;
+    color: $black-sub;
+    letter-spacing: rem(2);
+    background-color: $white;
+
+    @include mq(md) {
+        max-width: rem(360);
+        padding: rem(18) 0;
+    }
+}
+
+.p-contact-form__error-block {
+    text-align: center;
+}
+
+.p-contact-form__error-text {
+    color: #ff5757;
+    letter-spacing: rem(2);
+}
+
+.p-contact-form__text-block .error {
+    background-color: #ffdcdc;
+}

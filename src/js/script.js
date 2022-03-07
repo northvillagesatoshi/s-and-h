@@ -177,4 +177,5 @@ const thumbsPC = new Swiper ('.js-works-detail-thumbnail-pc', {
 
 sliderPC.controller.control = thumbsPC;
 thumbsPC.controller.control = sliderPC;
+
 });
