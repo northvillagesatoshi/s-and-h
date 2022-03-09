@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .p-content__title {
   font-size: rem(20);
   text-align: center;
@@ -9,11 +8,10 @@
 
   @include mq(md) {
     font-size: rem(25);
-
   }
 }
 
-.p-contents__inner{
+.p-contents__inner {
   margin: 0 auto;
   max-width: rem(540); //状況によって変える必要があるかも
   width: 100%;
@@ -56,7 +54,6 @@
 .p-content__media:nth-child(even) {
   @include mq(md) {
     flex-direction: row-reverse;
-    
   }
 }
 
@@ -101,7 +98,6 @@
 }
 
 
-
 .p-content__media-img img {
   position: absolute;
   top: 0;
@@ -129,3 +125,4 @@
     margin-top: rem(103);
   }
 }
+
