@@ -12,7 +12,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
-  var topBtn = $('.page-top');
+  var topBtn = $('.to-top');
   topBtn.hide();
 
   // ボタンの表示設定
