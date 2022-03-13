@@ -51,13 +51,22 @@
   display: inline-block;
   cursor: pointer;
   position: relative;
-  animation: all 0.3 ease;
+  
 
   @include mq(md) {
     width: 25%;
     height: auto;
   }
 }
+.p-top-content__item::after{
+  transition: all .3s ease;
+}
+
+.p-top-content__item:hover{
+  opacity: unset;
+}
+
+
 .p-top-content__item:hover::after {
   background: rgba(255, 255, 255, 0.4);
   content: "";
@@ -69,6 +78,7 @@
   left: 0;
   bottom: 0;
   right: 0;
+ 
 }
 .p-top-content__item p {
   position: absolute;

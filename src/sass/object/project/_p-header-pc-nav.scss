@@ -17,6 +17,7 @@
   height: inherit;
   width: rem(101);
   font-size: rem(16);
+  transition: .3s all ease-in-out;
 }
 
 .p-pc-nav__item a {
@@ -31,9 +32,14 @@
   letter-spacing: rem(1);
   font-size: rem(16);
   width: 100%;
+
 }
 
-.p-pc-nav__item a:hover::after {
+.p-pc-nav__item a::after{
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transform-origin: left top;
+  transition: transform .3s ease-in-out;
   position: absolute;
   width: 100%;
   height: rem(1);
@@ -41,8 +47,12 @@
   bottom: rem(8);
   display: block;
   background-color: $yellow2;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+
+}
+
+.p-pc-nav__item a:hover::after {
+  transform: scale(1, 1);
 }
 
 .p-pc-nav__item--white {

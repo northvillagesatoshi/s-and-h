@@ -31,7 +31,8 @@
   .page,
   .extend,
   .nextpostslink,
-  .previouspostslink {
+  .previouspostslink,
+  .nextlink {
     border: solid 1px $white;
     text-transform: uppercase;
     display: flex;
@@ -41,9 +42,10 @@
     justify-content: center;
     color: $white;
   }
-
+  
   .previouspostslink,
-  .nextpostslink {
+  .nextpostslink,
+  .nextlink {
     padding-left: rem(13);
     padding-right: rem(13);
     display: flex;
@@ -65,7 +67,8 @@
   .page,
   .current,
   .extend,
-  .nextpostslink {
+  .nextpostslink,
+  .nextlink {
     margin-left: rem(24);
   }
 }
