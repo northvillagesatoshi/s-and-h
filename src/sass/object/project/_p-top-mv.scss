@@ -3,6 +3,7 @@
 .top-mv {
   position: relative;
   height: 100vh;
+  background: $black;
 }
 
 .top-mv__slide-img {
@@ -62,24 +63,6 @@
   }
 }
 
-@-webkit-keyframes anime {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .top-mv__inner {
   position: absolute;
