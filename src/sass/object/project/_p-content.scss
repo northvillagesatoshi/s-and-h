@@ -37,9 +37,6 @@
 
 .p-content__medias {
   margin-top: rem(84);
-
-  @include mq(md) {
-  }
 }
 
 .p-content__media {
@@ -97,6 +94,17 @@
   }
 }
 
+.p-content__media:not(:nth-of-type(even)) .p-content__media-img {
+  @include mq(md) {
+    margin-right: 30px;
+  }
+}
+
+.p-content__media:nth-of-type(even) .p-content__media-img {
+  @include mq(md) {
+    margin-left: 30px;
+  }
+}
 
 .p-content__media-img img {
   position: absolute;
@@ -125,4 +133,3 @@
     margin-top: rem(103);
   }
 }
-
