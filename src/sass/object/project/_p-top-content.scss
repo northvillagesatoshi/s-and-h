@@ -1,25 +1,22 @@
 @use "global" as *;
-.p-top-content__title{
+.p-top-content{
   position: relative;
 }
 
-
-.p-top-content__line {
+.p-top-content::after{
+  content: "";
+  width: 94.6875%;
+  height: rem(1194);
   position: absolute;
-  transform: rotate(241.09deg);
-  top: 75%;
-  left: -55%;
-  width: 200vw;
+  top: rem(-107);
+  left: 0;
   z-index: -1;
+  background-image: linear-gradient(to right top, transparent 49.95%, $yellow 50.04%, $yellow 50.13%, transparent 50.18%)
+}
 
-  @include mq(md) {
-    // left:36%;
-    // transform: rotate(135.09deg);
-    transform: rotate(45deg);
-    left: -31%;
-    top: 85%;
-    width: 153.5vw;
-  }
+
+.p-top-content__title{
+  position: relative;
 }
 
 .p-top-content__inner {
@@ -32,7 +29,7 @@
   margin-top: rem(50);
   width: 100vw;
   position: relative;
-  left: 50%;
+  left: 49%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
