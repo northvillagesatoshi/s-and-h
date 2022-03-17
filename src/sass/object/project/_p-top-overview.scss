@@ -3,6 +3,18 @@
   position: relative;
 }
 
+.p-top-overview::after{
+
+  content: "";
+  width: 94.6875%;
+  height: rem(1212);
+  position: absolute;
+  top: rem(-211);
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to left top, transparent 49.95%, $yellow 50.04%, $yellow 50.13%, transparent 50.18%)
+}
+
 .p-top-overview__block {
   width: 100vw;
   position: relative;
@@ -107,7 +119,7 @@
   z-index: -1;
   @include mq(md) {
     transform: rotate(135deg);
-    left: -32.4%;
+    left: -34.4%;
     top: 75%;
     width: 155vw;
   }
