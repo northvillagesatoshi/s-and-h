@@ -27,12 +27,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: rem(50);
-  width: 100vw;
-  position: relative;
-  left: 49%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  // width: 100vw;
+  // position: relative;
+  // left: 49%;
+  // right: 50%;
+  // margin-left: -50vw;
+  // margin-right: -50vw;
 
   @include mq(md) {
     margin-top: rem(37);

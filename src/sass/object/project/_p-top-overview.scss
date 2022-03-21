@@ -4,7 +4,6 @@
 }
 
 .p-top-overview::after{
-
   content: "";
   width: 94.6875%;
   height: rem(1212);
@@ -110,20 +109,6 @@
   }
 }
 
-.p-top-overview__line {
-  position: absolute;
-  transform: rotate(105deg);
-  left: -102%;
-  top: 55%;
-  width: 267vw;
-  z-index: -1;
-  @include mq(md) {
-    transform: rotate(135deg);
-    left: -34.4%;
-    top: 75%;
-    width: 155vw;
-  }
-}
 
 .p-top-overview-bottom__inner {
   padding-left: rem(20);
