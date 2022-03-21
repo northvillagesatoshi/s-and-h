@@ -1,0 +1,58 @@
+@use "global"as *;
+
+.c-section-title__japanese {
+    font-size: rem(20);
+    color: $white;
+    letter-spacing: rem(2);
+    font-weight: $regular;
+    text-align: center;
+
+    @include mq(md) {
+        font-size: rem(30);
+        letter-spacing: rem(.5);
+    }
+}
+
+.c-section-title__english {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-45%);
+    font-size: rem(50);
+    letter-spacing: rem(2);
+    color: $subTitle-yellow;
+    font-family: $second-font-family;
+    font-weight: $regular;
+    text-transform: capitalize;
+    opacity: .2;
+    display: block;
+    text-align: center;
+
+    @include mq(md) {
+        top: -50%;
+        left: unset;
+        transform: translateY(-16%);
+        font-size: rem(110);
+        letter-spacing: rem(2);
+        text-align: unset;
+    }
+}
+
+.c-section-title__english--right {
+    @include mq(md) {
+        right: 0;
+    }
+}
+
+.c-section-title__english--left {
+    @include mq(md) {
+        left: 0;
+    }
+}
+
+.c-section-title__english--contact {
+    @include mq(md) {
+        top: -150%;
+        left: 0;
+    }
+}
