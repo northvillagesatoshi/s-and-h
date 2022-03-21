@@ -2,18 +2,18 @@
     <div class="p-contact-form__error-block">
         <p class="p-contact-form__error-text">※必要事項を入力してください</p>
     </div>
-    <div class="p-contact__form">
+    <div class="p-contact-form__block">
         <form action="contact-complete.html">
             <% let ary = [
-                { label:"※会社名",type:'text',id:'company',class:'error' },
+                { label:"※会社名",type:'text',id:'company',class:'error',autofocus:'autofocus' },
                 { label:"※お名前",type:'text',id:'name' }, 
                 { label:"※ふりがな",type:'text',id:'subName'}, 
-                { label:"※メールアドレス",type:'email',id:'mail' }
+                { label:"※メールアドレス",type:'email',id:'email',autocomplete:'email' }
             ] %>
             <% ary.forEach(function (value) { %>
                 <div class="p-contact-form__text-block">
                     <label for="<%= value.id %>"><%= value.label %></label>
-                    <input class="<%= value.class %>" id="<%= value.id %>" type="<%= value.type %>" name="<%= value.id %>" placeholder="テキストがはいります">
+                    <input class="<%= value.class %>" id="<%= value.id %>" type="<%= value.type %>" name="<%= value.id %>" autocomplete="<%= value.autocomplete %>" placeholder="テキストがはいります" <%= value.autofocus %>>
                 </div>
             <% }); %>
             <div class="p-contact-form__text-block">
@@ -22,9 +22,8 @@
             </div>
 
             <div class="p-contact-form__btn-block">
-                <input type="submit" class="submit" value="送信">
+                <button type="submit" class="submit" value="送信">送信</button>
             </div>
         </form>
     </div>
-
 </div>

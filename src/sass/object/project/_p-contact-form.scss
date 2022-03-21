@@ -1,6 +1,6 @@
 @use "global"as *;
 
-.p-contact__form {
+.p-contact-form__block {
     margin-top: rem(32);
 
     @include mq(md) {
@@ -75,18 +75,25 @@
     }
 }
 
-.p-contact-form__btn-block input {
+.p-contact-form__btn-block button {
     display: inline-block;
     padding: rem(13) 0;
     width: 100%;
     color: $black-sub;
     letter-spacing: rem(2);
     background-color: $white;
-
+    transition: all .3s;
     @include mq(md) {
         max-width: rem(360);
         padding: rem(18) 0;
     }
+}
+
+.p-contact-form__btn-block button:hover,
+.p-contact-form__btn-block button:focus {
+  background-color: $black;
+  color: $white;
+  border: solid 1px $white;
 }
 
 .p-contact-form__error-block {
