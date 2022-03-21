@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.to-top__allow {
+.c-to-top__allow {
   width: rem(24);
   height: rem(24);
   border-style: solid;
@@ -10,7 +10,7 @@
   display: inline-block;
 }
 
-.to-top {
+.c-to-top {
   z-index: 999;
   position: fixed;
   bottom: rem(39);
@@ -19,12 +19,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: rem(11);
-  padding-right: rem(11);
-  padding-top: rem(17);
-  padding-bottom: rem(4.9);
-  display: inline-block;
+  width: rem(45);
+  height: rem(45);
   visibility: hidden;
+  padding-top: rem(20);
 
   @include mq(md) {
     right: rem(29);
@@ -32,6 +30,6 @@
   }
 }
 
-.to-top__scroll {
+.c-to-top__scroll {
   visibility: visible;
 }

@@ -35,3 +35,9 @@
 .p-sp-nav__items a :hover {
   border-bottom: solid rem(1) $yellow2;
 }
+
+.p-sp-nav.js-drawer-menu{
+  @include mq(md) {
+    display:none !important;
+  }
+}

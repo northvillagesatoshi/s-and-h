@@ -10,9 +10,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(this).addClass('is-open');
     }
   });
+  
 
-
-  var topBtn = $('.to-top');
+  let topBtn = $('.c-to-top');
   topBtn.hide();
 
   // ボタンの表示設定
@@ -34,14 +34,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  // ヘッダー
-  // $(window).on('scroll', function () {
-  //   if ($('.slider1').height() < $(this).scrollTop()) {
-  //     $('.header').css('background', 'rgba(17,17,17,1)');
-  //   } else {
-  //     $('.header').css('background', 'rgba(17,17,17,0.5)');
-  //   }
-  // });
 
   //ドロワーメニュー
   $('.navbar_toggle').on('click', function () {
@@ -75,23 +67,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  var aboPos = $(".js-mv").offset().top;
+  let aboPos = $(".js-mv").offset().top;
 
   aboPos -= -130;
 
   $(window).scroll(function () {
 
     if ($(window).scrollTop() > aboPos) {
-      $(".js-to-top").addClass("to-top__scroll");
+      $(".js-to-top").addClass("c-to-top__scroll");
     } else {
-      $(".js-to-top").removeClass("to-top__scroll");
+      $(".js-to-top").removeClass("c-to-top__scroll");
 
     }
 
   });
 
 
-  var mySwiper = new Swiper('.swiper-container', {
+  let mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 1.48, //画像を何枚表示するか
     spaceBetween: 20,
     centeredSlides: true, //見切らせたい場合メイン画像をセンターにもってくるか
