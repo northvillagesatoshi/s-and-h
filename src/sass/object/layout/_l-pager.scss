@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.l-pager{
+  margin-top: rem(104);
+}
+
 .l-pagePrevNext {
   margin-top: rem(80);
   @include mq() {
