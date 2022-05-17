@@ -1,0 +1,5 @@
+[user]
+	name = northvillage
+	email = kitamurasatoshi3104@gmail.com
+[core]
+	excludesfile = /Users/satos/.gitignore_global
